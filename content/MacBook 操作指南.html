@@ -108,6 +108,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -153,4 +154,206 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='網管.html'>網管</a><li><a href='網管筆記.html'>網管筆記</a><ul><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W9.html'>W9</a><li><a href='w10-w11.html'>w10-w11</a><li><a href='W12-W13.html'>W12-W13</a><ul><li><a href='Blogger API.html'>Blogger API</a></li></ul><li><a href='W14.html'>W14</a><ul><li><a href='新增 blogger 文章.html'>新增 blogger 文章</a><li><a href='編輯 Blogger 文章.html'>編輯 Blogger 文章</a><li><a href='MacBook 操作指南.html'>MacBook 操作指南</a></li></ul><li><a href='W15-W18.html'>W15-W18</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">編輯 Blogger 文章 << <a href='編輯 Blogger 文章.html'>Previous</a> <a href='W15-W18.html'>Next</a> >> W15-W18<br /><h1>MacBook 操作指南</h1>
+<h4>參考資料:</h4>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1zIJkMnFNb0QYsBbzlxAvw8t7hZdZc0hh&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNFVchs1dsNTSU_7pC-9K4Ejpx-iHw" href="https://drive.google.com/open?id=1zIJkMnFNb0QYsBbzlxAvw8t7hZdZc0hh" target="_blank">Mac OS X for Absolute Beginners.pdf</a> (for @gm users only)</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1hl53RvI1sPFDuF63_TvjuuS-9y9ZQiO3&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNH5FNfaJwqKqNf2YKOkq0uTFuaOIw" href="https://drive.google.com/open?id=1hl53RvI1sPFDuF63_TvjuuS-9y9ZQiO3" target="_blank">Learn C on the Mac.pdf</a> (for @gm users only)</p>
+<p>這裡以 MacBook Air 2012 年出廠, 硬體規格:</p>
+<p>macOS Catalina Version 10.15.4</p>
+<p>1.8 GHz Dual-Core Intel Core i5</p>
+<p>Memory $GB 1600 MHz DDR3</p>
+<p>Graphics Intel HD Graphics 4000 1536 MB</p>
+<p>的操作為例, 如何存活在機械設計工程系與精密機械工程科的網際內容管理課程.</p>
+<p>由於網際內容管理課程主要以 Ｗindows 10 64 位元操作系統中的 Python 3 可攜程式環境使用為主.</p>
+<h4>從官方網站下載安裝 Python3</h4>
+<p>因此 Catalina 系統中的首要任務, 便是安裝 Python 3:</p>
+<p>在 2020.05.15 從 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.python.org/downloads/mac-osx/&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNHxhykTJtwEiJ4EmcUbtwqd1BY_DA" href="https://www.python.org/downloads/mac-osx/" target="_blank">https://www.python.org/<wbr/>downloads/mac-osx/</a> 可以下載安裝最新的 Python 3.8.3 解譯環境.</p>
+<h4>安裝 pip3</h4>
+<p>有了 python 3 環境之後, 就可以從 Lanuchpad -&gt; Other -&gt; Terminal 開啟終端機, 並從 get-pip.py 下載用來安裝 pip3 的程式碼, 以終端機上的指令進行安裝:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_254158">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+</td>
+<td>
+<div>
+<div><code>sudo python3 get-pip.py</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>安裝 pip3 之後, 可以安裝 CMSiMDE 所需的 flask, flask_cors, lxml, bs4, markdown, pelican 以及 leo:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_222732">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+</td>
+<td>
+<div>
+<div><code>sudo pip3 install flask flask_cors lxml bs4 markdown pelican leo</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4>安裝 XQuartz</h4>
+<p>之後, 就可以安裝 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.xquartz.org/&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNGksbraZqVFXhrcxNLqPSrsOQEuSg" href="https://www.xquartz.org/" target="_blank">XQuartz</a>, 以便使用 xterm 替代 terminal.</p>
+<p>接下來假如要使用 SciTE 作為文字編輯器, 建議透過 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.macports.org/install.php&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNGpueD4N2mUrnZ7Tr0W4fMjmHT7-w" href="https://www.macports.org/install.php" target="_blank">https://www.macports.org/<wbr/>install.php</a>  先根據 Catalina 操作系統版本安裝 Macports 之後, 再利用:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_930858">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+</td>
+<td>
+<div>
+<div><code>sudo port install scite</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>安裝 SciTE 文字編輯器.</p>
+<p>至此, 再加上 Catalina 原有的 git 指令, 使用者已經可以在 MacBook 上執行與 Windows 10 64 位元操作系統上相同的:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_148537">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+</td>
+<td>
+<div>
+<div><code>git clone --recurse-submodules</code></div>
+<div> </div>
+<div><code>git add .</code></div>
+<div> </div>
+<div><code>git commit -m </code><code>"commit message"</code></div>
+<div> </div>
+<div><code>git push</code></div>
+<div> </div>
+<div><code>git pull</code></div>
+<div> </div>
+<div><code>git submodule add</code></div>
+<div> </div>
+<div><code>git remote add</code></div>
+<div> </div>
+<div><code>git branch</code></div>
+<div> </div>
+<div><code>git merge</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>等指令, 只是在執行 python 程式時, 必須使用:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_951098">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</td>
+<td>
+<div>
+<div><code>python3 wsgi.py</code></div>
+<div> </div>
+<div><code>pip3 install certain_module</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>否則直接使用 python 執行, 將會用 Python 2.7 環境執行而產生錯誤.</p>
+<h4>其他建議安裝套件</h4>
+<p>Microsoft Remote Desktop</p>
+<p>Firefox</p>
+<p>OBS</p>
+<p>Visual Studio Code</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1VeO6HfA3eq8kn5q9m2iJ8SdGCVwUhizo&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNHBUEPFBrz_vkO9bvDC1NA62poOgw" href="https://drive.google.com/open?id=1VeO6HfA3eq8kn5q9m2iJ8SdGCVwUhizo" target="_blank">Visual Studio Code Distilled.pdf</a> (for @gm users only)</p>
+<p>Flutter (Dart)</p>
+<h4>其他提示</h4>
+<p>Command + Shift + . (toggle hidden folders and files)</p>
+<p></p>
+<br />編輯 Blogger 文章 << <a href='編輯 Blogger 文章.html'>Previous</a> <a href='W15-W18.html'>Next</a> >> W15-W18</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        

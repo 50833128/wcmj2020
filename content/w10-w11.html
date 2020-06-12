@@ -154,77 +154,170 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='網管筆記.html'>Next</a> >> 網管筆記<br /><h1>網管</h1>
-<p>[2001:288:6004:17::53]3128</p>
-<p>140.130.17.53:3128</p>
-<p>Inter-net(網際，inter+network)=inter-national</p>
-<p>Protocol(協定)</p>
-<p>Tcp/ip</p>
-<p>Transmission control protocol</p>
-<p>  Transmit   控制  協定</p>
-<p>   傳輸</p>
-<p>Internet   protocol</p>
-<p>網際網路 <span>  </span>協定</p>
-<p>IPv4=version 4 IP    edition</p>
-<p>      版本         版本</p>
-<p>IPv6=version 6 IP</p>
-<p>4IP . 四區段用 . 區隔</p>
-<p>6IP . 八區段用 <span>: </span>區隔</p>
-<p>140.130.17.254(系gateway通道)</p>
-<p>Remote login 遠端登入</p>
-<p> </p>
-<p>Types of computer</p>
-<ol>
-<li>super computer(超級電腦</li>
-<li>mainframe(伺服器主機</li>
-<li>server(伺服器</li>
-<li>personal computer(個人電腦</li>
-<li>microcontroller(微控制器 <span>raspberry(</span>樹莓派(小pc</li>
-</ol>
-<p>6.mobil phone(手機</p>
-<p>Router(路由器 <span>route(</span>路徑 <span>remote(</span>遠端</p>
-<p>Batch computeration(批次運算cluster(叢集</p>
-<p>Micro(微小 <span>macro(</span>巨大 <span>microscope(</span>顯微鏡</p>
-<p>Tale scope(望遠鏡 <span>atom(</span>原子 <span>atom bomb(</span>原子彈</p>
-<p> </p>
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tbody>
-<tr height="14px">
-<td width="143"><img alt="國立虎尾科技大學 郵件" class="logo" height="59" src="https://www.google.com/a/gm.nfu.edu.tw/images/logo.gif" width="143"/></td>
-<td align="right"><span color="#777" size="-1" style="color: #777777;"><b>鐘敬筌 &lt;50833128@gm.nfu.edu.tw&gt;</b></span></td>
-</tr>
-</tbody>
-</table>
-<hr/>
-<div class="maincontent">
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tbody>
-<tr>
-<td><span size="+1" style="font-size: xx-small;"><b>000</b></span></td>
-</tr>
-</tbody>
-</table>
-<hr/>
-<table border="0" cellpadding="0" cellspacing="0" class="message" width="100%">
-<tbody>
-<tr>
-<td><span size="-1"><b>班鴿<span> </span></b>&lt;johnson930126@gmail.com&gt;</span></td>
-<td align="right"><span size="-1">2020年6月12日 下午1:52</span></td>
-</tr>
-<tr>
-<td colspan="2">
-<div>收件者: 50833125@gm.nfu.edu.tw, 50833128@gm.nfu.edu.tw, 廖柏睿 &lt;50833133@gm.nfu.edu.tw&gt;, 林昆輝 &lt;50833134@gm.nfu.edu.tw&gt;, 50833138@gm.nfu.edu.tw, 陳柏均 &lt;50833122@gm.nfu.edu.tw&gt;, 50833131@gm.nfu.edu.tw</div>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<table border="0" cellpadding="12" cellspacing="0" width="100%">
+    <div id="tipue_search_content">W9 << <a href='W9.html'>Previous</a> <a href='W12-W13.html'>Next</a> >> W12-W13<br /><h1>w10-w11</h1>
+<h4>以 SSH 維護倉儲</h4>
+<p>由於在電腦教室時採用純 IPv6 協定上網, 因此為了能夠在近端將倉儲改版資料推送到目前只接受 IPv4 協定連線的 github, 以下除了將原本以 https 對 github 連線, 改為以 ssh 協定連線外, 在 Windows 環境下必須利用 putty 與 plink, 設定 putty 格式的 .ppk 以及能夠同時支援 IPv4 與 IPv6 的代理主機.</p>
+<p>設定步驟如下:</p>
+<p>1. 下載 Putty 工具組</p>
+<p>從 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.chiark.greenend.org.uk/~sgtatham/putty/&amp;source=gmail&amp;ust=1592029093249000&amp;usg=AFQjCNEJNPQXPhHo4bmWmBb96TCkBDBzUA" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/" rel="nofollow" target="_blank">https://www.chiark.greenend.<wbr/>org.uk/~sgtatham/putty/</a> 下載一般版, 或從 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://jakub.kotrla.net/putty/&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGHlPZ3xGXI3JAWMJOlBLU3lKRT9w" href="http://jakub.kotrla.net/putty/" rel="nofollow" target="_blank">http://jakub.kotrla.net/<wbr/>putty/</a> 下載特殊的可攜版本.</p>
+<p>2. 利用 y:\portablegit\bin\sh.exe 進入 shell 命令環境後, 以 </p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_743182">
+<table border="0" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
 <td>
+<div>1</div>
+</td>
+<td>
 <div>
-<div dir="ltr">
-<br /> <a href='網管筆記.html'>Next</a> >> 網管筆記</div>
+<div><code>ssh-keygen -t rsa -b 4096 -C </code><code>"使用者學號"</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>在 /y/home/.ssh 目錄下建立 id_rsa 與 id_rsa.pub 等 private key 與 public key</p>
+<p>之後以 SciTE 開啟 id_rsa.pub 後, 將此 public key 的內容, 以新增添加到 Github.com 帳號下 personal settings -&gt; SSH and GPG keys 頁面下.</p>
+<p>3. 接下來要利用 puttygen.exe 將 id_rsa 轉為 Putty 可以解讀的 .ppk 格式, 並修改隨身系統的啟動批次檔案, 指定利用 putty 目錄下的 plink 執行 git 指令的網路代理設定.</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_905412">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</td>
+<td>
+<div>
+<div><code>修改啟動的 start.bat 加入下列設定:</code></div>
+<div> </div>
+<div><code>set GIT_HOME=%Disk%:\portablegit\<wbr/>bin\</code></div>
+<div><code>set GIT_SSH=%Disk%:\putty\plink.<wbr/>exe</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>4. 利用 puttygen.exe 載入第二步驟所建立的 private key, 也就是 id_rsa.</p>
+<p>開啟 puttygen 之後, 以右下方的 load 載入 id_rsa, 成功載入後, 利用 save private key 按鈕, 將已經轉為 putty 格式的 .ppk 存檔. 此一 .ppk 檔案必須在設定 putty 中<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a><span> </span>session 時, 在 Connection-&gt;SSH-&gt;Auth 項目下, 將轉檔後的 .ppk 指向 private key file for authentication 欄位. </p>
+<p>並在 Connection-&gt;Proxy 項目下, 指定 Proxy type: HTTP, 並將 IPv6 代理主機設為 ::53 或 ::42 埠號設為 3128.</p>
+<p>5. 之後確定 home 下的 .ssh 目錄中的 config 設定檔案為:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_94557">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+</td>
+<td>
+<div>
+<div><code># no proxy at home</code></div>
+<div><code>#ProxyCommand y:/PortableGit/mingw64/bin/<wbr/>connect.exe -H<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://proxy.mde.nfu.edu.tw:3128&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNHPf73eZYHSKY9IxO8U1oPUBnZDJQ" href="http://proxy.mde.nfu.edu.tw:3128/" target="_blank">proxy.mde.nfu.edu.tw:3128</a><span> </span>%h %p</code></div>
+<div><code># set git_ssh=y:/putty/plink.exe with auth under putty<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a><span> </span>session setup</code></div>
+<div><code>ProxyCommand y:/putty/plink.exe<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a><span> </span>%h %p</code></div>
+<div><code> </code> </div>
+<div><code>Host<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a></code></div>
+<div><code>    </code><code>User git</code></div>
+<div><code>    </code><code>Port 22</code></div>
+<div><code>    </code><code>Hostname<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a></code></div>
+<div><code>    </code> </div>
+<div><code>    </code><code># for connect.exe need openssh key format</code></div>
+<div><code>    </code><code>#IdentityFile "y:\home\.ssh\id_rsa_<wbr/>mdecourse"</code></div>
+<div><code>    </code><code># for plink.exe need rsa key format but set under putty<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a><span> </span>session</code></div>
+<div><code>    </code><code># plink.exe do not need the following setting</code></div>
+<div><code>    </code><code>#IdentityFile "y:\home\.ssh\mdecourse_putty_<wbr/>private.ppk"</code></div>
+<div><code> </code> </div>
+<div><code>    </code><code>TCPKeepAlive yes</code></div>
+<div><code>    </code><code>IdentitiesOnly yes</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>6. 最後再將 wcmj2020 倉儲中 .git 目錄下的 config 檔案中的連線協定, 由 https 改為採 ssh 連線: 範例如下:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_565759">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+</td>
+<td>
+<div>
+<div><code>[core]</code></div>
+<div><code>    </code><code>repositoryformatversion = 0</code></div>
+<div><code>    </code><code>filemode = </code><code>false</code></div>
+<div><code>    </code><code>bare = </code><code>false</code></div>
+<div><code>    </code><code>logallrefupdates = </code><code>true</code></div>
+<div><code>    </code><code>symlinks = </code><code>false</code></div>
+<div><code>    </code><code>ignorecase = </code><code>true</code></div>
+<div><code>[submodule]</code></div>
+<div><code>    </code><code>active = .</code></div>
+<div><code>[remote </code><code>"origin"</code><code>]</code></div>
+<div><code>    </code><code>#url =<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://github.com/mdecourse/wcmj2020.git&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNFPufdRPmuBvfm2Cnh_BYOH-w7Kzw" href="https://github.com/mdecourse/wcmj2020.git" target="_blank">https://github.com/mdecourse/<wbr/>wcmj2020.git</a></code></div>
+<div><code>    </code><code>url = git@github.com:mdecourse/<wbr/>wcmj2020.git</code></div>
+<div><code>    </code><code>fetch = +refs/heads/*:refs/remotes/<wbr/>origin/*</code></div>
+<div><code>[branch </code><code>"master"</code><code>]</code></div>
+<div><code>    </code><code>remote = origin</code></div>
+<div><code>    </code><code>merge = refs/heads/master</code></div>
+<div><code>[submodule </code><code>"cmsimde"</code><code>]</code></div>
+<div><code>    </code><code>url = https:</code><code>//<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com/mdecourse/cmsimde.git&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNGINYkp40rRfE3RUUYb2RNlhSacmg" href="http://github.com/mdecourse/cmsimde.git" target="_blank">github.com/mdecourse/<wbr/>cmsimde.git</a></code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>之後就可以透過近端的 .ppk private key 與 Github.com 上的 public key 對應, 無需輸入帳號密碼就可以進行 git push.</p>
+<p></p>
+<br />W9 << <a href='W9.html'>Previous</a> <a href='W12-W13.html'>Next</a> >> W12-W13</div>
         
     <!-- footer -->
       <div class="container">

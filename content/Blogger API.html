@@ -1,0 +1,665 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>50833128 網管</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">50833128 網管</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='網管.html'>網管</a><li class='has-children'><a href='網管筆記.html'>網管筆記</a><ul class='dropdown'><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W9.html'>W9</a><li><a href='w10-w11.html'>w10-w11</a><li class='has-children'><a href='W12-W13.html'>W12-W13</a><ul class='dropdown'><li><a href='Blogger API.html'>Blogger API</a></li></ul><li class='has-children'><a href='W14.html'>W14</a><ul class='dropdown'><li><a href='新增 blogger 文章.html'>新增 blogger 文章</a><li><a href='編輯 Blogger 文章.html'>編輯 Blogger 文章</a><li><a href='MacBook 操作指南.html'>MacBook 操作指南</a></li></ul><li><a href='W15-W18.html'>W15-W18</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">W12-W13 << <a href='W12-W13.html'>Previous</a> <a href='W14.html'>Next</a> >> W14<br /><h1>Blogger API</h1>
+<p>基本概念:</p>
+<p>1. 這裡所指的 Blogger API 為: <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://developers.google.com/blogger/docs/3.0/using&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNGjKFLzgO8y4uhATAaQ392427Welw" href="https://developers.google.com/blogger/docs/3.0/using" target="_blank">https://developers.google.<wbr/>com/blogger/docs/3.0/using</a></p>
+<p>2. 將 CMSiMDE 中的 Pelican Blog 內容同步到 Google Blogger 的目的, 在讓網際內容管理系統中的網誌原始資料修改過程具備版次, 而且可同時將網誌出版在 Github Pages 與 Google Blogger 中, 讓網際內容的保存較具有永續性.</p>
+<p>3. Google Blogger 中的網誌系統各有獨立 ID, 這裡稱為 blog_id, 而網誌中的每一篇文章各有獨立 ID, 這裡稱為 post_id.</p>
+<p>4. Google Blogger 管理者登入後, 在 Settings - Permissions 項下, 允許 invite more authors, 而且在 Settings - Permissions - Blog admins and Authors 項下, 允許將所邀請共同寫作的 Author 提升為 Admin 管理者.</p>
+<p>5. Google 的每一個 API 都允許使用者建立以 Oauth2 為基礎的登入使用授權憑證, 配合所啟動的各種 API 程式庫, 一旦啟用並登入後, 可以透過程式方法, 呼叫程式庫功能, 對各種 Google 所提供的服務 (Blogger, Drive, Gmail, Calendar 等) 新增內容. 以 Blogger 而言, 只要使用者被設為某一網誌的共同作者, 即擁有在該網誌新增或編輯自己所發布的網誌文章權限.</p>
+<p>6. 使用者登入 Google 帳號後, 在 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://console.developers.google.com/&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNH0pjZY-4qJ_YKOt3YE9hH-GibVFg" href="https://console.developers.google.com/" target="_blank">https://console.developers.<wbr/>google.com</a> 中所建立的 Oauth2 client ID, 可以下載存為 client_secrets.json 檔案.</p>
+<p>7. client_secrets.json 檔案則可以透過下列程式, 轉換為 credential_token.dat, 使用者針對特定啟用的 API 程式庫, 可以在讀取 credential_token.dat 的情況下, 取得與登入 Gmail 帳號相同的使用授權, 直接在擁有權限的 blog_id 中新增特定的文章 (並以特定的 post_id 辨識).</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_296901">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+</td>
+<td>
+<div>
+<div><code>@language</code> <code>python</code></div>
+<div><code>#<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://developers.google.com/blogger/docs/3.0/using&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNGjKFLzgO8y4uhATAaQ392427Welw" href="https://developers.google.com/blogger/docs/3.0/using" target="_blank">https://developers.google.com/<wbr/>blogger/docs/3.0/using</a></code></div>
+<div><code># under Mac command + b to execute</code></div>
+<div><code>import</code> <code>pickle</code></div>
+<div><code>import</code> <code>os</code></div>
+<div><code>from</code> <code>googleapiclient.<wbr/>discovery </code><code>import</code> <code>build</code></div>
+<div><code>from</code> <code>google_auth_oauthlib.<wbr/>flow </code><code>import</code> <code>InstalledAppFlow</code></div>
+<div> </div>
+<div> </div>
+<div><code>SCOPES </code><code>=</code> <code>[</code><code>'<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.googleapis.com/auth/blogger&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNEJbiLkpzXxLXoP3gwqRdBnSsMDVA" href="https://www.googleapis.com/auth/blogger" target="_blank">https://www.<wbr/>googleapis.com/auth/blogger</a>'</code><code>, ]</code></div>
+<div> </div>
+<div><code># we check if the file tBo store the credentials exists</code></div>
+<div><code>if</code> <code>not</code> <code>os.path.exists(</code><code>'./../..<wbr/>/yen_gm_blogger_token.dat'</code><code>):</code></div>
+<div> </div>
+<div><code>    </code><code>flow </code><code>=</code> <code>InstalledAppFlow.<wbr/>from_client_secrets_file(</code><code>'./..<wbr/>/../yen_gm_blogger_secrets.<wbr/>json'</code><code>, SCOPES)</code></div>
+<div><code>    </code><code>credentials </code><code>=</code> <code>flow.run_<wbr/>local_server()</code></div>
+<div> </div>
+<div><code>    </code><code>with </code><code>open</code><code>(</code><code>'./../../yen_gm_<wbr/>blogger_token.dat'</code><code>, </code><code>'wb'</code><code>) as credentials_dat:</code></div>
+<div><code>        </code><code>pickle.dump(<wbr/>credentials, credentials_dat)</code></div>
+<div><code>else</code><code>:</code></div>
+<div><code>    </code><code>with </code><code>open</code><code>(</code><code>'./../../yen_gm_<wbr/>blogger_token.dat'</code><code>, </code><code>'rb'</code><code>) as credentials_dat:</code></div>
+<div><code>        </code><code>credentials </code><code>=</code> <code>pickle.<wbr/>load(credentials_dat)</code></div>
+<div><code>service </code><code>=</code> <code>build(</code><code>'blogger'</code><code>, </code><code>'<wbr/>v3'</code><code>, credentials</code><code>=</code><code>credentials)</code></div>
+<div><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNEbrNijv1nekYSChCNdafJ2hVNZCA" href="http://g.es/" target="_blank">g.es</a>(service)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4>W12</h4>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1d_YpSrTdKLPKZjkHW2TNsbHRU1ePNRFl&amp;source=gmail&amp;ust=1592029093252000&amp;usg=AFQjCNGnXe9KF5qmpsCpVXI1eM-lx06BbQ" href="https://drive.google.com/open?id=1d_YpSrTdKLPKZjkHW2TNsbHRU1ePNRFl" target="_blank">Leo Editor 與 Pelican blog 使用說明影片</a></p>
+<h4>W13</h4>
+<p>Pelican Blog 內容與 Google Blogger 同步</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1vpNOyew4ts78nuJ50-CiE26WSk0YxOV7&amp;source=gmail&amp;ust=1592029093252000&amp;usg=AFQjCNHyZ-oREQYH3a_mCJU38TVfw7P9rw" href="https://drive.google.com/open?id=1vpNOyew4ts78nuJ50-CiE26WSk0YxOV7" target="_blank">W13  利用 Leo Editor 按鈕處理同步說明影片</a></p>
+<p>利用 Windows 10 設定 -&gt; 選擇預設網頁瀏覽器, 使用 Google Chrome 作為預設瀏覽器.</p>
+<p>隨身程式系統必須安裝 google-api-python-<wbr/>client 與 oauth2client<br/><br/>pip install google-api-python-client oauth2client<br/><br/>OAuth 2.0 client IDs 程式類別可以選擇 other<br/><br/>使用者完成 client_secrets.json 設定後, 必須將檔案存在倉儲目錄外部</p>
+<p>add_to_blogger 按鈕內容:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_130744">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+<div>27</div>
+<div>28</div>
+<div>29</div>
+<div>30</div>
+<div>31</div>
+<div>32</div>
+<div>33</div>
+<div>34</div>
+<div>35</div>
+<div>36</div>
+<div>37</div>
+<div>38</div>
+<div>39</div>
+<div>40</div>
+<div>41</div>
+<div>42</div>
+<div>43</div>
+<div>44</div>
+<div>45</div>
+<div>46</div>
+<div>47</div>
+<div>48</div>
+<div>49</div>
+<div>50</div>
+<div>51</div>
+<div>52</div>
+<div>53</div>
+<div>54</div>
+<div>55</div>
+<div>56</div>
+<div>57</div>
+<div>58</div>
+<div>59</div>
+<div>60</div>
+<div>61</div>
+<div>62</div>
+<div>63</div>
+<div>64</div>
+<div>65</div>
+<div>66</div>
+<div>67</div>
+<div>68</div>
+<div>69</div>
+<div>70</div>
+<div>71</div>
+<div>72</div>
+<div>73</div>
+<div>74</div>
+<div>75</div>
+<div>76</div>
+<div>77</div>
+<div>78</div>
+<div>79</div>
+<div>80</div>
+<div>81</div>
+<div>82</div>
+<div>83</div>
+<div>84</div>
+<div>85</div>
+<div>86</div>
+<div>87</div>
+<div>88</div>
+<div>89</div>
+<div>90</div>
+<div>91</div>
+<div>92</div>
+<div>93</div>
+<div>94</div>
+<div>95</div>
+<div>96</div>
+</td>
+<td>
+<div>
+<div><code>from</code> <code>markdown </code><code>import</code> <code>markdown</code></div>
+<div><code>from</code> <code>oauth2client </code><code>import</code> <code>clien<wbr/>t</code></div>
+<div><code>from</code> <code>googleapiclient </code><code>import</code> <code>sa<wbr/>mple_tools</code></div>
+<div><code>import</code> <code>os</code></div>
+<div> </div>
+<div><code>os.environ[</code><code>'TZ'</code><code>] </code><code>=</code> <code>'Asia/<wbr/>Taipei'</code></div>
+<div><code>argv </code><code>=</code> <code>""</code></div>
+<div><code># 認證並建立服務</code></div>
+<div><code># name of the api is "blogger", version is "v3"</code></div>
+<div><code># description of the api is __doc__</code></div>
+<div><code># file name of the application: location of client_secrets.json</code></div>
+<div><code>service, flags </code><code>=</code> <code>sample_tools.init(</code></div>
+<div><code>  </code><code>argv, </code><code>'blogger'</code><code>, </code><code>'v3'</code><code>, __doc__, </code><code>"./../../client_<wbr/>secrets.json"</code><code>,</code></div>
+<div><code>  </code><code>scope</code><code>=</code><code>'<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.googleapis.com/auth/blogger&amp;source=gmail&amp;ust=1592029093252000&amp;usg=AFQjCNFmKsVNUs88qiXbEwCa-PCk35gQzQ" href="https://www.googleapis.com/auth/blogger" target="_blank">https://www.<wbr/>googleapis.com/auth/blogger</a>'</code><code>)</code></div>
+<div> </div>
+<div> </div>
+<div><code>def</code> <code>get_cat_tag_content(data):</code></div>
+<div><code>    </code><code># 請注意, 因為 data 來自 .md 的檔案 內容, 第1行為 ---</code></div>
+<div><code>    </code><code># 用跳行符號分割</code></div>
+<div><code>    </code><code>data_list </code><code>=</code> <code>data.split(</code><code>"\<wbr/>n"</code><code>)</code></div>
+<div><code>    </code><code>#第 2 行為 title</code></div>
+<div><code>    </code><code>title</code><code>=</code> <code>data_list[</code><code>1</code><code>]</code></div>
+<div><code>    </code><code>#第 4 行為 category</code></div>
+<div><code>    </code><code>category </code><code>=</code> <code>data_list[</code><code>3</code><code>]</code></div>
+<div><code>    </code><code>#第 5 行為 tags</code></div>
+<div><code>    </code><code>tags </code><code>=</code> <code>data_list[</code><code>4</code><code>]</code></div>
+<div><code>    </code><code># 有多項資料的 content 型別為數列</code></div>
+<div><code>    </code><code># 再將第 9 行之後的資料數列串回成以跳行隔開的資料</code></div>
+<div><code>    </code><code>content </code><code>=</code> <code>"\n"</code><code>.join(data_<wbr/>list[</code><code>8</code><code>:])</code></div>
+<div><code>    </code><code># 先將截斷摘要與內文的 pelican md 檔按符號, 換成 Blogger 的 &lt;!--more--&gt;</code></div>
+<div><code>    </code><code>content </code><code>=</code> <code>content.replace(</code><code><wbr/>'&lt;!-- PELICAN_END_SUMMARY --&gt;'</code><code>, </code><code>'&lt;!--more--&gt;'</code><code>)</code></div>
+<div><code>    </code><code># 接著若內容有 ~~~python 與 ~~~ 則換成 Wordpress 格式</code></div>
+<div><code>    </code><code>#content = content.replace('~~~python', '[code lang="python"]')</code></div>
+<div><code>    </code><code>#content = content.replace('~~~', '[/code]')</code></div>
+<div><code>    </code><code>return</code> <code>title, category, tags, content</code></div>
+<div> </div>
+<div><code># 從目前所在節點的 body pan 中取出類別, tags 以及文章內容</code></div>
+<div><code># p.h 為 @clean filename.md</code></div>
+<div><code># 因為要使用 @clean 節點掛上為後的 blogger post_id, 因此改為讀 .md 檔案</code></div>
+<div><code>md_filename </code><code>=</code> <code>p.h.split(</code><code>" "</code><code>)[</code><code>1</code><code>]</code></div>
+<div><code>with </code><code>open</code><code>(md_filename, </code><code>'r'</code><code>, encoding</code><code>=</code><code>"utf-8"</code><code>) as content_file:</code></div>
+<div><code>    </code><code>md_content </code><code>=</code> <code>content_file.<wbr/>read()</code></div>
+<div><code># title_str, category_str, tags_str, content = get_cat_tag_content(p.b)</code></div>
+<div><code>title_str, category_str, tags_str, content </code><code>=</code> <code>get_cat_tag_content(<wbr/>md_content)</code></div>
+<div><code>category </code><code>=</code> <code>category_str.split(</code><code><wbr/>":"</code><code>)[</code><code>1</code><code>]</code></div>
+<div><code>tags </code><code>=</code> <code>tags_str.split(</code><code>":"</code><code>)[</code><code>1</code><code>].<wbr/>split(</code><code>","</code><code>)</code></div>
+<div><code>tags.append(category)</code></div>
+<div><code># title 是一個單獨的字串</code></div>
+<div><code>title </code><code>=</code> <code>title_str.split(</code><code>":"</code><code>)[</code><code>1</code><code><wbr/>]</code></div>
+<div><code># 將 markdown 格式 content 轉為 html</code></div>
+<div><code>content </code><code>=</code> <code>markdown(content)</code></div>
+<div><code># 以下處理 content 的 &lt;h2&gt; 標題</code></div>
+<div><code>content </code><code>=</code> <code>content.replace(</code><code>"&lt;<wbr/>h2&gt;"</code><code>, </code><code>"&lt;h2&gt;&lt;font size='4'&gt;"</code><code>)</code></div>
+<div><code>content </code><code>=</code> <code>content.replace(</code><code>"&lt;/<wbr/>h2&gt;"</code><code>, </code><code>"&lt;/font&gt;&lt;/h2&gt;"</code><code>)</code></div>
+<div><code>#<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093253000&amp;usg=AFQjCNFDunkfPcAATeNpgpYE0ZkBEOg0OQ" href="http://g.es/" target="_blank">g.es</a>(content)</code></div>
+<div> </div>
+<div><code>try</code><code>:</code></div>
+<div><code>    </code><code>'''</code></div>
+<div><code>    </code><code>users = service.users()</code></div>
+<div><code>    </code><code># 取得使用者 profile 資料</code></div>
+<div><code>    </code><code>user = users.get(userId='self').<wbr/>execute()</code></div>
+<div><code>    </code><code>print('網誌名稱: %s' % user['displayName'])</code></div>
+<div><code>    </code><code>'''</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>service.blogs()</code></div>
+<div><code>    </code><code># 取得使用者所建立網誌名稱</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>blogs.listByUser(<wbr/>userId</code><code>=</code><code>'self'</code><code>).execute()</code></div>
+<div><code>    </code><code># post_id is now blogs["items"][0]["id"]</code></div>
+<div><code>    </code><code>blog_id </code><code>=</code> <code>blogs[</code><code>"items"</code><code>][</code><code>0</code><code><wbr/>][</code><code>"id"</code><code>]</code></div>
+<div><code>    </code><code>#for blog in blogs['items']:</code></div>
+<div><code>        </code><code>#print(blog['name'], blog['url'])</code></div>
+<div><code>    </code><code>posts </code><code>=</code> <code>service.posts()</code></div>
+<div><code>    </code><code># 新增網誌 post 時, 需要 post_id</code></div>
+<div><code>    </code><code>body </code><code>=</code> <code>{</code></div>
+<div><code>    </code><code>"kind"</code><code>: </code><code>"blogger#post"</code><code>,</code></div>
+<div><code>    </code><code>"id"</code><code>: blog_id,</code></div>
+<div><code>    </code><code>"title"</code><code>: title,</code></div>
+<div><code>    </code><code># 利用 markdown 函式, 將 .md 的內文轉為 html, 作為 Blogger 的文章內容</code></div>
+<div><code>    </code><code>"content"</code><code>: content,</code></div>
+<div><code>    </code><code>"labels"</code><code>: tags</code></div>
+<div><code>    </code><code>}</code></div>
+<div><code>    </code><code>insert </code><code>=</code> <code>posts.insert(<wbr/>blogId</code><code>=</code><code>blog_id, body</code><code>=</code><code>body)</code></div>
+<div><code>    </code><code>posts_doc </code><code>=</code> <code>insert.<wbr/>execute()</code></div>
+<div><code>    </code><code>post_id </code><code>=</code> <code>posts_doc[</code><code>"id"</code><code>]</code></div>
+<div><code>    </code><code>#print(posts_doc)</code></div>
+<div><code>    </code><code>os.remove(</code><code>"blogger.dat"</code><code>)</code></div>
+<div><code>    </code><code># 利用最後的 child 節點來儲存 post_id</code></div>
+<div><code>    </code><code>to_save_post_id </code><code>=</code> <code>p.<wbr/>insertAsLastChild()  </code></div>
+<div><code>    </code><code># 改為內文為空的節點, id 直接標在 head 標題</code></div>
+<div><code>    </code><code>to_save_post_id.b </code><code>=</code> <code>""</code></div>
+<div><code>    </code><code>to_save_post_id.h </code><code>=</code> <code>post_<wbr/>id</code></div>
+<div><code>    </code><code># 因為新增節點, commander 必須 redraw</code></div>
+<div><code>    </code><code>c.redraw()</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093254000&amp;usg=AFQjCNHzn_JkZ1eyaHRiaKjs6dhiWWOcXw" href="http://g.es/" target="_blank">g.es</a>(</code><code>"post_id 為"</code><code>, post_id)</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093254000&amp;usg=AFQjCNHzn_JkZ1eyaHRiaKjs6dhiWWOcXw" href="http://g.es/" target="_blank">g.es</a>(</code><code>"已經將資料送往 Blogger!"</code><code>)</code></div>
+<div><code>except</code><code>(client.<wbr/>AccessTokenRefreshError):</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093254000&amp;usg=AFQjCNHzn_JkZ1eyaHRiaKjs6dhiWWOcXw" href="http://g.es/" target="_blank">g.es</a>(</code><code>"error"</code><code>)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>edit_to_blogger 按鈕內容:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_415508">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+<div>27</div>
+<div>28</div>
+<div>29</div>
+<div>30</div>
+<div>31</div>
+<div>32</div>
+<div>33</div>
+<div>34</div>
+<div>35</div>
+<div>36</div>
+<div>37</div>
+<div>38</div>
+<div>39</div>
+<div>40</div>
+<div>41</div>
+<div>42</div>
+<div>43</div>
+<div>44</div>
+<div>45</div>
+<div>46</div>
+<div>47</div>
+<div>48</div>
+<div>49</div>
+<div>50</div>
+<div>51</div>
+<div>52</div>
+<div>53</div>
+<div>54</div>
+<div>55</div>
+<div>56</div>
+<div>57</div>
+<div>58</div>
+<div>59</div>
+<div>60</div>
+<div>61</div>
+<div>62</div>
+<div>63</div>
+<div>64</div>
+<div>65</div>
+<div>66</div>
+<div>67</div>
+<div>68</div>
+<div>69</div>
+<div>70</div>
+<div>71</div>
+<div>72</div>
+<div>73</div>
+<div>74</div>
+<div>75</div>
+<div>76</div>
+<div>77</div>
+<div>78</div>
+<div>79</div>
+<div>80</div>
+</td>
+<td>
+<div>
+<div><code>from</code> <code>markdown </code><code>import</code> <code>markdown</code></div>
+<div><code>from</code> <code>oauth2client </code><code>import</code> <code>clien<wbr/>t</code></div>
+<div><code>from</code> <code>googleapiclient </code><code>import</code> <code>sa<wbr/>mple_tools</code></div>
+<div><code>import</code> <code>os</code></div>
+<div> </div>
+<div><code>os.environ[</code><code>'TZ'</code><code>] </code><code>=</code> <code>'Asia/<wbr/>Taipei'</code></div>
+<div><code>argv </code><code>=</code> <code>""</code></div>
+<div><code># 認證並建立服務</code></div>
+<div><code># name of the api is "blogger", version is "v3"</code></div>
+<div><code># description of the api is __doc__</code></div>
+<div><code># file name of the application: location of client_secrets.json</code></div>
+<div><code>service, flags </code><code>=</code> <code>sample_tools.init(</code></div>
+<div><code>  </code><code>argv, </code><code>'blogger'</code><code>, </code><code>'v3'</code><code>, __doc__, </code><code>"./../../client_<wbr/>secrets.json"</code><code>,</code></div>
+<div><code>  </code><code>scope</code><code>=</code><code>'<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.googleapis.com/auth/blogger&amp;source=gmail&amp;ust=1592029093255000&amp;usg=AFQjCNGlRhQ2FtnDJirbMmqvtNUeh5uekg" href="https://www.googleapis.com/auth/blogger" target="_blank">https://www.<wbr/>googleapis.com/auth/blogger</a>'</code><code>)</code></div>
+<div> </div>
+<div> </div>
+<div><code>def</code> <code>get_cat_tag_content(data):</code></div>
+<div><code>    </code><code># 請注意, 因為 data 來自 .md 的檔案 內容, 第1行為 ---</code></div>
+<div><code>    </code><code># 用跳行符號分割</code></div>
+<div><code>    </code><code>data_list </code><code>=</code> <code>data.split(</code><code>"\<wbr/>n"</code><code>)</code></div>
+<div><code>    </code><code>#第 2 行為 title</code></div>
+<div><code>    </code><code>title</code><code>=</code> <code>data_list[</code><code>1</code><code>]</code></div>
+<div><code>    </code><code>#第 4 行為 category</code></div>
+<div><code>    </code><code>category </code><code>=</code> <code>data_list[</code><code>3</code><code>]</code></div>
+<div><code>    </code><code>#第 5 行為 tags</code></div>
+<div><code>    </code><code>tags </code><code>=</code> <code>data_list[</code><code>4</code><code>]</code></div>
+<div><code>    </code><code># 有多項資料的 content 型別為數列</code></div>
+<div><code>    </code><code># 再將第 9 行之後的資料數列串回成以跳行隔開的資料</code></div>
+<div><code>    </code><code>content </code><code>=</code> <code>"\n"</code><code>.join(data_<wbr/>list[</code><code>8</code><code>:])</code></div>
+<div><code>    </code><code># 先將截斷摘要與內文的 pelican md 檔按符號, 換成 Blogger 的 &lt;!--more--&gt;</code></div>
+<div><code>    </code><code>content </code><code>=</code> <code>content.replace(</code><code><wbr/>'&lt;!-- PELICAN_END_SUMMARY --&gt;'</code><code>, </code><code>'&lt;!--more--&gt;'</code><code>)</code></div>
+<div><code>    </code><code># 接著若內容有 ~~~python 與 ~~~ 則換成 Wordpress 格式</code></div>
+<div><code>    </code><code>#content = content.replace('~~~python', '[code lang="python"]')</code></div>
+<div><code>    </code><code>#content = content.replace('~~~', '[/code]')</code></div>
+<div><code>    </code><code>return</code> <code>title, category, tags, content</code></div>
+<div> </div>
+<div><code># 從目前所在節點的 body pan 中取出類別, tags 以及文章內容</code></div>
+<div><code># p.h 為 @clean filename.md</code></div>
+<div><code># 因為要使用 @clean 節點掛上為後的 blogger post_id, 因此改為讀 .md 檔案</code></div>
+<div><code>md_filename </code><code>=</code> <code>p.h.split(</code><code>" "</code><code>)[</code><code>1</code><code>]</code></div>
+<div><code>with </code><code>open</code><code>(md_filename, </code><code>'r'</code><code>, encoding</code><code>=</code><code>"utf-8"</code><code>) as content_file:</code></div>
+<div><code>    </code><code>md_content </code><code>=</code> <code>content_file.<wbr/>read()</code></div>
+<div><code># title_str, category_str, tags_str, content = get_cat_tag_content(p.b)</code></div>
+<div><code>title_str, category_str, tags_str, content </code><code>=</code> <code>get_cat_tag_content(<wbr/>md_content)</code></div>
+<div><code>category </code><code>=</code> <code>category_str.split(</code><code><wbr/>":"</code><code>)[</code><code>1</code><code>]</code></div>
+<div><code>tags </code><code>=</code> <code>tags_str.split(</code><code>":"</code><code>)[</code><code>1</code><code>].<wbr/>split(</code><code>","</code><code>)</code></div>
+<div><code>tags.append(category)</code></div>
+<div><code># title 是一個單獨的字串</code></div>
+<div><code>title </code><code>=</code> <code>title_str.split(</code><code>":"</code><code>)[</code><code>1</code><code><wbr/>]</code></div>
+<div><code># 將 markdown 格式 content 轉為 html</code></div>
+<div><code>content </code><code>=</code> <code>markdown(content)</code></div>
+<div><code># 以下處理 content 的 &lt;h2&gt; 標題</code></div>
+<div><code>content </code><code>=</code> <code>content.replace(</code><code>"&lt;<wbr/>h2&gt;"</code><code>, </code><code>"&lt;h2&gt;&lt;font size='4'&gt;"</code><code>)</code></div>
+<div><code>content </code><code>=</code> <code>content.replace(</code><code>"&lt;/<wbr/>h2&gt;"</code><code>, </code><code>"&lt;/font&gt;&lt;/h2&gt;"</code><code>)</code></div>
+<div><code>#<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093255000&amp;usg=AFQjCNG2-eHdDwkrN5Q0_3fYEXr75LX0Wg" href="http://g.es/" target="_blank">g.es</a>(content)</code></div>
+<div> </div>
+<div><code>try</code><code>:</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>service.blogs()</code></div>
+<div><code>    </code><code># 取得使用者所建立網誌名稱</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>blogs.listByUser(<wbr/>userId</code><code>=</code><code>'self'</code><code>).execute()</code></div>
+<div><code>    </code><code>blog_id </code><code>=</code> <code>blogs[</code><code>"items"</code><code>][</code><code>0</code><code><wbr/>][</code><code>"id"</code><code>]</code></div>
+<div><code>    </code><code># 設法取得原 post 的 id</code></div>
+<div><code>    </code><code>postid_outline </code><code>=</code> <code>p.<wbr/>getLastChild()</code></div>
+<div><code>    </code><code># 直接從標題取得 post 的 id 號碼</code></div>
+<div><code>    </code><code>post_id </code><code>=</code> <code>postid_outline.h</code></div>
+<div><code>    </code><code>posts </code><code>=</code> <code>service.posts()</code></div>
+<div><code>    </code><code># 更新網誌文章時的 body</code></div>
+<div><code>    </code><code>body </code><code>=</code> <code>{</code></div>
+<div><code>    </code><code>"kind"</code><code>: </code><code>"blogger#post"</code><code>,</code></div>
+<div><code>    </code><code>"title"</code><code>: title,</code></div>
+<div><code>    </code><code>"content"</code><code>: content</code></div>
+<div><code>    </code><code>}</code></div>
+<div><code>    </code><code># need to save postId to outline head</code></div>
+<div><code>    </code><code>update </code><code>=</code> <code>posts.update(<wbr/>blogId</code><code>=</code><code>blog_id, postId</code><code>=</code><code>post_id, body</code><code>=</code><code>body, publish</code><code>=</code><code>True</code><code>)</code></div>
+<div><code>    </code><code>update_doc </code><code>=</code> <code>update.<wbr/>execute()</code></div>
+<div><code>    </code><code>os.remove(</code><code>"blogger.dat"</code><code>)</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNHrgB7M9jfDZz2UL0uGzpYlYuDxGg" href="http://g.es/" target="_blank">g.es</a>(</code><code>"post_id 為"</code><code>, post_id)</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNHrgB7M9jfDZz2UL0uGzpYlYuDxGg" href="http://g.es/" target="_blank">g.es</a>(</code><code>"已經將更新資料送往 Blogger!"</code><code>)</code></div>
+<div><code>except</code><code>(client.<wbr/>AccessTokenRefreshError):</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNHrgB7M9jfDZz2UL0uGzpYlYuDxGg" href="http://g.es/" target="_blank">g.es</a>(</code><code>"error"</code><code>)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br />W12-W13 << <a href='W12-W13.html'>Previous</a> <a href='W14.html'>Next</a> >> W14</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
