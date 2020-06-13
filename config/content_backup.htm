@@ -31,3 +31,1215 @@
 <p>Micro(微小 <span>macro(</span>巨大 <span>microscope(</span>顯微鏡</p>
 <p>Tale scope(望遠鏡 <span>atom(</span>原子 <span>atom bomb(</span>原子彈</p>
 <p> </p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr height="14px">
+<td width="143"><img alt="國立虎尾科技大學 郵件" class="logo" height="59" src="https://www.google.com/a/gm.nfu.edu.tw/images/logo.gif" width="143"/></td>
+<td align="right"><span color="#777" size="-1" style="color: #777777;"><b>鐘敬筌 &lt;50833128@gm.nfu.edu.tw&gt;</b></span></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<div class="maincontent">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td><span size="+1" style="font-size: xx-small;"><b>000</b></span></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" class="message" width="100%">
+<tbody>
+<tr>
+<td><span size="-1"><b>班鴿<span> </span></b>&lt;johnson930126@gmail.com&gt;</span></td>
+<td align="right"><span size="-1">2020年6月12日 下午1:52</span></td>
+</tr>
+<tr>
+<td colspan="2">
+<div>收件者: 50833125@gm.nfu.edu.tw, 50833128@gm.nfu.edu.tw, 廖柏睿 &lt;50833133@gm.nfu.edu.tw&gt;, 林昆輝 &lt;50833134@gm.nfu.edu.tw&gt;, 50833138@gm.nfu.edu.tw, 陳柏均 &lt;50833122@gm.nfu.edu.tw&gt;, 50833131@gm.nfu.edu.tw</div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<table border="0" cellpadding="12" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td>
+<div>
+<div dir="ltr">
+<h1>網管筆記</h1>
+<h2>W2</h2>
+<h4>建網站</h4>
+<p>此內容管理系統以 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://github.com/mdecourse/cmsimde&amp;source=gmail&amp;ust=1592029093249000&amp;usg=AFQjCNFxYCS9E_K-X1jPHH1QHGVS11Cjsg" href="https://github.com/mdecourse/cmsimde" target="_blank">https:..github.com.<wbr/>mdecourse.cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
+<p>利用 cmsimde 建立靜態網誌方法:</p>
+<ol>
+<li>在 github 建立倉儲, git clone 到近端</li>
+<li>參考<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://github.com/mdecourse/newcms&amp;source=gmail&amp;ust=1592029093249000&amp;usg=AFQjCNG7VHabg5dwBc8if1VGz43lAZOjkA" href="https://github.com/mdecourse/newcms" target="_blank">https:..github.com.<wbr/>mdecourse.newcms</a>, 加入除了 cmsimde 目錄外的所有內容</li>
+</ol>
+<p>以 git submodule add <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://github.com/mdecourse/cmsimde&amp;source=gmail&amp;ust=1592029093249000&amp;usg=AFQjCNFxYCS9E_K-X1jPHH1QHGVS11Cjsg" href="https://github.com/mdecourse/cmsimde" target="_blank">https:..github.com.<wbr/>mdecourse.cmsimde</a> cmsimde</p>
+<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
+<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
+<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
+<ol start="4">
+<li>之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</li>
+</ol>
+<p>git clone --recurse-submodules <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://github.com/mdecourse/newcms.git&amp;source=gmail&amp;ust=1592029093249000&amp;usg=AFQjCNGvYQKZvYPYCAMys3Y2rXTCW2H9jA" href="https://github.com/mdecourse/newcms.git" target="_blank">https:..<wbr/>github.com.mdecourse.newcms.<wbr/>git</a></p>
+<h2>W3</h2>
+<h4>筆記</h4>
+<p>terminology 專業術語、particular 特別、technical 技術、application 應用、</p>
+<p>software 軟體、hardware 硬體、firmwarre 韌體、machine language 機器語言、</p>
+<p>URL:Uniform Resourse Locator  統一資源定位、command wundow 命令視窗、submodule 子模組</p>
+<p>程式令:</p>
+<p>Y:←指y槽 Y:\   ←表示Y槽的root根目錄 &gt; 為回應符號(prormptsign)  \ 為blackslash 反斜線 dir為顯示目錄內容的指令 cd tmp 表示change directory 到指定的目錄 git為分散式版次管理的指令名稱 git clone表示要使用git對遠端的倉儲進行clone。</p>
+<h2>W4</h2>
+<p>portable 可攜、Assembly 執行機器速度快但對硬體的相容性差、objective -c</p>
+<p>→開發iphone的前一代程式、compile 編譯、interpret 解譯、unix電腦系統的一種、shell 殼、graphics 圖形、device 物件、interface 介面</p>
+<p>ps.c++ →加入物件功能的C</p>
+<h2>W5</h2>
+<p>掃墓放假</p>
+<h2>W6</h2>
+<p>大致講解↓的用法和規格</p>
+<p>portable obs →直播軟體</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://meet.google.com/&amp;source=gmail&amp;ust=1592029093249000&amp;usg=AFQjCNHFriuMSnvzayWjObX_J4t2sK0NUA" href="http://meet.google.com/" target="_blank">meet.google.com</a>→google 的視訊軟體</p>
+<p> </p>
+<h2>W7</h2>
+<p>abunta→遠端操控電腦、asscii 美國標準交換資訊碼。 </p>
+<p>tmp&gt;wcmj2020&gt;init.py   更改網頁標題</p>
+<h2>W8</h2>
+<p>網站push的步驟</p>
+<p>1.先把網站切成靜態Home</p>
+<p>2.git add空格.   →意思是跟電腦說現在要讀的東西</p>
+<p>3.git comit -m"add w□" →跟電腦說你要讀的東西是什麼</p>
+<p>4.git push →推上動態網頁</p>
+<p>讓我們實作一次分組，弄<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://meet.google.com/&amp;source=gmail&amp;ust=1592029093249000&amp;usg=AFQjCNHFriuMSnvzayWjObX_J4t2sK0NUA" href="http://meet.google.com/" target="_blank">meet.google.com</a>的實際操<wbr/>作。好讓下次上課可以線上上課。</p>
+<p> </p>
+<p>School IPV6 : [2001:288:6004:17::53]:3128(<wbr/>42.17.7.4)</p>
+<p>Port :<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://140.130.17.53:3128&amp;source=gmail&amp;ust=1592029093249000&amp;usg=AFQjCNFwqlsRoAR4yJBtwanYMY_heEJPKw" href="http://140.130.17.53:3128/" target="_blank">140.130.17.53:3128</a></p>
+<p>inter-net == inter - national</p>
+<p>(inter network)</p>
+<p>protocol 協定</p>
+<p>tcp/ip == transmision control protocol / internet protocol</p>
+<p>transmit 傳輸</p>
+<p>edition 版本(瞬時)</p>
+<p>Version 版本(較大的修改)</p>
+<p>router 路由器</p>
+<p>route 路徑</p>
+<p>remote login 遠端登入</p>
+<p>client &lt;-&gt; server</p>
+<p>          www</p>
+<p>browser &lt;-&gt; www server</p>
+<p>HTTP</p>
+<p>sttp client &lt;-&gt; sttp server</p>
+<h4>中華電信 DNS Server</h4>
+<p>2001:b000:168::1</p>
+<h4>Type of computer</h4>
+<p>1.Super computer</p>
+<p>2.Mainframe</p>
+<p>3.Server</p>
+<p>4.Personal Computer</p>
+<p>5.Microcontroler</p>
+<p>6.Mobile phone</p>
+<p>tele 遠</p>
+<p>macro 巨大 (比原子atom大)</p>
+<h2>W9</h2>
+<h4>電腦硬體架構</h4>
+<p>主機螢幕周邊</p>
+<p>主機:</p>
+<p>主機板 MB</p>
+<p>處理器 CPU</p>
+<p>記憶體 RAM</p>
+<p>顯示卡 GPU</p>
+<p>電源供應器 PSU</p>
+<p>硬碟 HDD,SSD</p>
+<h4>電腦的種類</h4>
+<p>Types Of Computer</p>
+<p>Super Computer 超級電腦</p>
+<p>MainFrame 伺服器主機</p>
+<p>Server 伺服器</p>
+<p>PC 個人電腦</p>
+<p>Microcontroler 微控制器</p>
+<p>Mobile Phone 智慧型手機</p>
+<h2>w10-w11</h2>
+<h4>以 SSH 維護倉儲</h4>
+<p>由於在電腦教室時採用純 IPv6 協定上網, 因此為了能夠在近端將倉儲改版資料推送到目前只接受 IPv4 協定連線的 github, 以下除了將原本以 https 對 github 連線, 改為以 ssh 協定連線外, 在 Windows 環境下必須利用 putty 與 plink, 設定 putty 格式的 .ppk 以及能夠同時支援 IPv4 與 IPv6 的代理主機.</p>
+<p>設定步驟如下:</p>
+<p>1. 下載 Putty 工具組</p>
+<p>從 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.chiark.greenend.org.uk/~sgtatham/putty/&amp;source=gmail&amp;ust=1592029093249000&amp;usg=AFQjCNEJNPQXPhHo4bmWmBb96TCkBDBzUA" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/" rel="nofollow" target="_blank">https://www.chiark.greenend.<wbr/>org.uk/~sgtatham/putty/</a> 下載一般版, 或從 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://jakub.kotrla.net/putty/&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGHlPZ3xGXI3JAWMJOlBLU3lKRT9w" href="http://jakub.kotrla.net/putty/" rel="nofollow" target="_blank">http://jakub.kotrla.net/<wbr/>putty/</a> 下載特殊的可攜版本.</p>
+<p>2. 利用 y:\portablegit\bin\sh.exe 進入 shell 命令環境後, 以 </p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_743182">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+</td>
+<td>
+<div>
+<div><code>ssh-keygen -t rsa -b 4096 -C </code><code>"使用者學號"</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>在 /y/home/.ssh 目錄下建立 id_rsa 與 id_rsa.pub 等 private key 與 public key</p>
+<p>之後以 SciTE 開啟 id_rsa.pub 後, 將此 public key 的內容, 以新增添加到 Github.com 帳號下 personal settings -&gt; SSH and GPG keys 頁面下.</p>
+<p>3. 接下來要利用 puttygen.exe 將 id_rsa 轉為 Putty 可以解讀的 .ppk 格式, 並修改隨身系統的啟動批次檔案, 指定利用 putty 目錄下的 plink 執行 git 指令的網路代理設定.</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_905412">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</td>
+<td>
+<div>
+<div><code>修改啟動的 start.bat 加入下列設定:</code></div>
+<div> </div>
+<div><code>set GIT_HOME=%Disk%:\portablegit\<wbr/>bin\</code></div>
+<div><code>set GIT_SSH=%Disk%:\putty\plink.<wbr/>exe</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>4. 利用 puttygen.exe 載入第二步驟所建立的 private key, 也就是 id_rsa.</p>
+<p>開啟 puttygen 之後, 以右下方的 load 載入 id_rsa, 成功載入後, 利用 save private key 按鈕, 將已經轉為 putty 格式的 .ppk 存檔. 此一 .ppk 檔案必須在設定 putty 中<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a><span> </span>session 時, 在 Connection-&gt;SSH-&gt;Auth 項目下, 將轉檔後的 .ppk 指向 private key file for authentication 欄位. </p>
+<p>並在 Connection-&gt;Proxy 項目下, 指定 Proxy type: HTTP, 並將 IPv6 代理主機設為 ::53 或 ::42 埠號設為 3128.</p>
+<p>5. 之後確定 home 下的 .ssh 目錄中的 config 設定檔案為:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_94557">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+</td>
+<td>
+<div>
+<div><code># no proxy at home</code></div>
+<div><code>#ProxyCommand y:/PortableGit/mingw64/bin/<wbr/>connect.exe -H<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://proxy.mde.nfu.edu.tw:3128&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNHPf73eZYHSKY9IxO8U1oPUBnZDJQ" href="http://proxy.mde.nfu.edu.tw:3128/" target="_blank">proxy.mde.nfu.edu.tw:3128</a><span> </span>%h %p</code></div>
+<div><code># set git_ssh=y:/putty/plink.exe with auth under putty<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a><span> </span>session setup</code></div>
+<div><code>ProxyCommand y:/putty/plink.exe<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a><span> </span>%h %p</code></div>
+<div><code> </code> </div>
+<div><code>Host<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a></code></div>
+<div><code>    </code><code>User git</code></div>
+<div><code>    </code><code>Port 22</code></div>
+<div><code>    </code><code>Hostname<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a></code></div>
+<div><code>    </code> </div>
+<div><code>    </code><code># for connect.exe need openssh key format</code></div>
+<div><code>    </code><code>#IdentityFile "y:\home\.ssh\id_rsa_<wbr/>mdecourse"</code></div>
+<div><code>    </code><code># for plink.exe need rsa key format but set under putty<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com&amp;source=gmail&amp;ust=1592029093250000&amp;usg=AFQjCNGcNcQWb8n26bwt5kqkI29i7u3Lcw" href="http://github.com/" target="_blank">github.com</a><span> </span>session</code></div>
+<div><code>    </code><code># plink.exe do not need the following setting</code></div>
+<div><code>    </code><code>#IdentityFile "y:\home\.ssh\mdecourse_putty_<wbr/>private.ppk"</code></div>
+<div><code> </code> </div>
+<div><code>    </code><code>TCPKeepAlive yes</code></div>
+<div><code>    </code><code>IdentitiesOnly yes</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>6. 最後再將 wcmj2020 倉儲中 .git 目錄下的 config 檔案中的連線協定, 由 https 改為採 ssh 連線: 範例如下:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_565759">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+</td>
+<td>
+<div>
+<div><code>[core]</code></div>
+<div><code>    </code><code>repositoryformatversion = 0</code></div>
+<div><code>    </code><code>filemode = </code><code>false</code></div>
+<div><code>    </code><code>bare = </code><code>false</code></div>
+<div><code>    </code><code>logallrefupdates = </code><code>true</code></div>
+<div><code>    </code><code>symlinks = </code><code>false</code></div>
+<div><code>    </code><code>ignorecase = </code><code>true</code></div>
+<div><code>[submodule]</code></div>
+<div><code>    </code><code>active = .</code></div>
+<div><code>[remote </code><code>"origin"</code><code>]</code></div>
+<div><code>    </code><code>#url =<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://github.com/mdecourse/wcmj2020.git&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNFPufdRPmuBvfm2Cnh_BYOH-w7Kzw" href="https://github.com/mdecourse/wcmj2020.git" target="_blank">https://github.com/mdecourse/<wbr/>wcmj2020.git</a></code></div>
+<div><code>    </code><code>url = git@github.com:mdecourse/<wbr/>wcmj2020.git</code></div>
+<div><code>    </code><code>fetch = +refs/heads/*:refs/remotes/<wbr/>origin/*</code></div>
+<div><code>[branch </code><code>"master"</code><code>]</code></div>
+<div><code>    </code><code>remote = origin</code></div>
+<div><code>    </code><code>merge = refs/heads/master</code></div>
+<div><code>[submodule </code><code>"cmsimde"</code><code>]</code></div>
+<div><code>    </code><code>url = https:</code><code>//<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://github.com/mdecourse/cmsimde.git&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNGINYkp40rRfE3RUUYb2RNlhSacmg" href="http://github.com/mdecourse/cmsimde.git" target="_blank">github.com/mdecourse/<wbr/>cmsimde.git</a></code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>之後就可以透過近端的 .ppk private key 與 Github.com 上的 public key 對應, 無需輸入帳號密碼就可以進行 git push.</p>
+<p></p>
+<h2>W12-W13</h2>
+<h3>Blogger API</h3>
+<p>基本概念:</p>
+<p>1. 這裡所指的 Blogger API 為: <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://developers.google.com/blogger/docs/3.0/using&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNGjKFLzgO8y4uhATAaQ392427Welw" href="https://developers.google.com/blogger/docs/3.0/using" target="_blank">https://developers.google.<wbr/>com/blogger/docs/3.0/using</a></p>
+<p>2. 將 CMSiMDE 中的 Pelican Blog 內容同步到 Google Blogger 的目的, 在讓網際內容管理系統中的網誌原始資料修改過程具備版次, 而且可同時將網誌出版在 Github Pages 與 Google Blogger 中, 讓網際內容的保存較具有永續性.</p>
+<p>3. Google Blogger 中的網誌系統各有獨立 ID, 這裡稱為 blog_id, 而網誌中的每一篇文章各有獨立 ID, 這裡稱為 post_id.</p>
+<p>4. Google Blogger 管理者登入後, 在 Settings - Permissions 項下, 允許 invite more authors, 而且在 Settings - Permissions - Blog admins and Authors 項下, 允許將所邀請共同寫作的 Author 提升為 Admin 管理者.</p>
+<p>5. Google 的每一個 API 都允許使用者建立以 Oauth2 為基礎的登入使用授權憑證, 配合所啟動的各種 API 程式庫, 一旦啟用並登入後, 可以透過程式方法, 呼叫程式庫功能, 對各種 Google 所提供的服務 (Blogger, Drive, Gmail, Calendar 等) 新增內容. 以 Blogger 而言, 只要使用者被設為某一網誌的共同作者, 即擁有在該網誌新增或編輯自己所發布的網誌文章權限.</p>
+<p>6. 使用者登入 Google 帳號後, 在 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://console.developers.google.com/&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNH0pjZY-4qJ_YKOt3YE9hH-GibVFg" href="https://console.developers.google.com/" target="_blank">https://console.developers.<wbr/>google.com</a> 中所建立的 Oauth2 client ID, 可以下載存為 client_secrets.json 檔案.</p>
+<p>7. client_secrets.json 檔案則可以透過下列程式, 轉換為 credential_token.dat, 使用者針對特定啟用的 API 程式庫, 可以在讀取 credential_token.dat 的情況下, 取得與登入 Gmail 帳號相同的使用授權, 直接在擁有權限的 blog_id 中新增特定的文章 (並以特定的 post_id 辨識).</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_296901">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+</td>
+<td>
+<div>
+<div><code>@language</code> <code>python</code></div>
+<div><code>#<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://developers.google.com/blogger/docs/3.0/using&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNGjKFLzgO8y4uhATAaQ392427Welw" href="https://developers.google.com/blogger/docs/3.0/using" target="_blank">https://developers.google.com/<wbr/>blogger/docs/3.0/using</a></code></div>
+<div><code># under Mac command + b to execute</code></div>
+<div><code>import</code> <code>pickle</code></div>
+<div><code>import</code> <code>os</code></div>
+<div><code>from</code> <code>googleapiclient.<wbr/>discovery </code><code>import</code> <code>build</code></div>
+<div><code>from</code> <code>google_auth_oauthlib.<wbr/>flow </code><code>import</code> <code>InstalledAppFlow</code></div>
+<div> </div>
+<div> </div>
+<div><code>SCOPES </code><code>=</code> <code>[</code><code>'<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.googleapis.com/auth/blogger&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNEJbiLkpzXxLXoP3gwqRdBnSsMDVA" href="https://www.googleapis.com/auth/blogger" target="_blank">https://www.<wbr/>googleapis.com/auth/blogger</a>'</code><code>, ]</code></div>
+<div> </div>
+<div><code># we check if the file tBo store the credentials exists</code></div>
+<div><code>if</code> <code>not</code> <code>os.path.exists(</code><code>'./../..<wbr/>/yen_gm_blogger_token.dat'</code><code>):</code></div>
+<div> </div>
+<div><code>    </code><code>flow </code><code>=</code> <code>InstalledAppFlow.<wbr/>from_client_secrets_file(</code><code>'./..<wbr/>/../yen_gm_blogger_secrets.<wbr/>json'</code><code>, SCOPES)</code></div>
+<div><code>    </code><code>credentials </code><code>=</code> <code>flow.run_<wbr/>local_server()</code></div>
+<div> </div>
+<div><code>    </code><code>with </code><code>open</code><code>(</code><code>'./../../yen_gm_<wbr/>blogger_token.dat'</code><code>, </code><code>'wb'</code><code>) as credentials_dat:</code></div>
+<div><code>        </code><code>pickle.dump(<wbr/>credentials, credentials_dat)</code></div>
+<div><code>else</code><code>:</code></div>
+<div><code>    </code><code>with </code><code>open</code><code>(</code><code>'./../../yen_gm_<wbr/>blogger_token.dat'</code><code>, </code><code>'rb'</code><code>) as credentials_dat:</code></div>
+<div><code>        </code><code>credentials </code><code>=</code> <code>pickle.<wbr/>load(credentials_dat)</code></div>
+<div><code>service </code><code>=</code> <code>build(</code><code>'blogger'</code><code>, </code><code>'<wbr/>v3'</code><code>, credentials</code><code>=</code><code>credentials)</code></div>
+<div><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093251000&amp;usg=AFQjCNEbrNijv1nekYSChCNdafJ2hVNZCA" href="http://g.es/" target="_blank">g.es</a>(service)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4>W12</h4>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1d_YpSrTdKLPKZjkHW2TNsbHRU1ePNRFl&amp;source=gmail&amp;ust=1592029093252000&amp;usg=AFQjCNGnXe9KF5qmpsCpVXI1eM-lx06BbQ" href="https://drive.google.com/open?id=1d_YpSrTdKLPKZjkHW2TNsbHRU1ePNRFl" target="_blank">Leo Editor 與 Pelican blog 使用說明影片</a></p>
+<h4>W13</h4>
+<p>Pelican Blog 內容與 Google Blogger 同步</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1vpNOyew4ts78nuJ50-CiE26WSk0YxOV7&amp;source=gmail&amp;ust=1592029093252000&amp;usg=AFQjCNHyZ-oREQYH3a_mCJU38TVfw7P9rw" href="https://drive.google.com/open?id=1vpNOyew4ts78nuJ50-CiE26WSk0YxOV7" target="_blank">W13  利用 Leo Editor 按鈕處理同步說明影片</a></p>
+<p>利用 Windows 10 設定 -&gt; 選擇預設網頁瀏覽器, 使用 Google Chrome 作為預設瀏覽器.</p>
+<p>隨身程式系統必須安裝 google-api-python-<wbr/>client 與 oauth2client<br/><br/>pip install google-api-python-client oauth2client<br/><br/>OAuth 2.0 client IDs 程式類別可以選擇 other<br/><br/>使用者完成 client_secrets.json 設定後, 必須將檔案存在倉儲目錄外部</p>
+<p>add_to_blogger 按鈕內容:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_130744">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+<div>27</div>
+<div>28</div>
+<div>29</div>
+<div>30</div>
+<div>31</div>
+<div>32</div>
+<div>33</div>
+<div>34</div>
+<div>35</div>
+<div>36</div>
+<div>37</div>
+<div>38</div>
+<div>39</div>
+<div>40</div>
+<div>41</div>
+<div>42</div>
+<div>43</div>
+<div>44</div>
+<div>45</div>
+<div>46</div>
+<div>47</div>
+<div>48</div>
+<div>49</div>
+<div>50</div>
+<div>51</div>
+<div>52</div>
+<div>53</div>
+<div>54</div>
+<div>55</div>
+<div>56</div>
+<div>57</div>
+<div>58</div>
+<div>59</div>
+<div>60</div>
+<div>61</div>
+<div>62</div>
+<div>63</div>
+<div>64</div>
+<div>65</div>
+<div>66</div>
+<div>67</div>
+<div>68</div>
+<div>69</div>
+<div>70</div>
+<div>71</div>
+<div>72</div>
+<div>73</div>
+<div>74</div>
+<div>75</div>
+<div>76</div>
+<div>77</div>
+<div>78</div>
+<div>79</div>
+<div>80</div>
+<div>81</div>
+<div>82</div>
+<div>83</div>
+<div>84</div>
+<div>85</div>
+<div>86</div>
+<div>87</div>
+<div>88</div>
+<div>89</div>
+<div>90</div>
+<div>91</div>
+<div>92</div>
+<div>93</div>
+<div>94</div>
+<div>95</div>
+<div>96</div>
+</td>
+<td>
+<div>
+<div><code>from</code> <code>markdown </code><code>import</code> <code>markdown</code></div>
+<div><code>from</code> <code>oauth2client </code><code>import</code> <code>clien<wbr/>t</code></div>
+<div><code>from</code> <code>googleapiclient </code><code>import</code> <code>sa<wbr/>mple_tools</code></div>
+<div><code>import</code> <code>os</code></div>
+<div> </div>
+<div><code>os.environ[</code><code>'TZ'</code><code>] </code><code>=</code> <code>'Asia/<wbr/>Taipei'</code></div>
+<div><code>argv </code><code>=</code> <code>""</code></div>
+<div><code># 認證並建立服務</code></div>
+<div><code># name of the api is "blogger", version is "v3"</code></div>
+<div><code># description of the api is __doc__</code></div>
+<div><code># file name of the application: location of client_secrets.json</code></div>
+<div><code>service, flags </code><code>=</code> <code>sample_tools.init(</code></div>
+<div><code>  </code><code>argv, </code><code>'blogger'</code><code>, </code><code>'v3'</code><code>, __doc__, </code><code>"./../../client_<wbr/>secrets.json"</code><code>,</code></div>
+<div><code>  </code><code>scope</code><code>=</code><code>'<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.googleapis.com/auth/blogger&amp;source=gmail&amp;ust=1592029093252000&amp;usg=AFQjCNFmKsVNUs88qiXbEwCa-PCk35gQzQ" href="https://www.googleapis.com/auth/blogger" target="_blank">https://www.<wbr/>googleapis.com/auth/blogger</a>'</code><code>)</code></div>
+<div> </div>
+<div> </div>
+<div><code>def</code> <code>get_cat_tag_content(data):</code></div>
+<div><code>    </code><code># 請注意, 因為 data 來自 .md 的檔案 內容, 第1行為 ---</code></div>
+<div><code>    </code><code># 用跳行符號分割</code></div>
+<div><code>    </code><code>data_list </code><code>=</code> <code>data.split(</code><code>"\<wbr/>n"</code><code>)</code></div>
+<div><code>    </code><code>#第 2 行為 title</code></div>
+<div><code>    </code><code>title</code><code>=</code> <code>data_list[</code><code>1</code><code>]</code></div>
+<div><code>    </code><code>#第 4 行為 category</code></div>
+<div><code>    </code><code>category </code><code>=</code> <code>data_list[</code><code>3</code><code>]</code></div>
+<div><code>    </code><code>#第 5 行為 tags</code></div>
+<div><code>    </code><code>tags </code><code>=</code> <code>data_list[</code><code>4</code><code>]</code></div>
+<div><code>    </code><code># 有多項資料的 content 型別為數列</code></div>
+<div><code>    </code><code># 再將第 9 行之後的資料數列串回成以跳行隔開的資料</code></div>
+<div><code>    </code><code>content </code><code>=</code> <code>"\n"</code><code>.join(data_<wbr/>list[</code><code>8</code><code>:])</code></div>
+<div><code>    </code><code># 先將截斷摘要與內文的 pelican md 檔按符號, 換成 Blogger 的 &lt;!--more--&gt;</code></div>
+<div><code>    </code><code>content </code><code>=</code> <code>content.replace(</code><code><wbr/>'&lt;!-- PELICAN_END_SUMMARY --&gt;'</code><code>, </code><code>'&lt;!--more--&gt;'</code><code>)</code></div>
+<div><code>    </code><code># 接著若內容有 ~~~python 與 ~~~ 則換成 Wordpress 格式</code></div>
+<div><code>    </code><code>#content = content.replace('~~~python', '[code lang="python"]')</code></div>
+<div><code>    </code><code>#content = content.replace('~~~', '[/code]')</code></div>
+<div><code>    </code><code>return</code> <code>title, category, tags, content</code></div>
+<div> </div>
+<div><code># 從目前所在節點的 body pan 中取出類別, tags 以及文章內容</code></div>
+<div><code># p.h 為 @clean filename.md</code></div>
+<div><code># 因為要使用 @clean 節點掛上為後的 blogger post_id, 因此改為讀 .md 檔案</code></div>
+<div><code>md_filename </code><code>=</code> <code>p.h.split(</code><code>" "</code><code>)[</code><code>1</code><code>]</code></div>
+<div><code>with </code><code>open</code><code>(md_filename, </code><code>'r'</code><code>, encoding</code><code>=</code><code>"utf-8"</code><code>) as content_file:</code></div>
+<div><code>    </code><code>md_content </code><code>=</code> <code>content_file.<wbr/>read()</code></div>
+<div><code># title_str, category_str, tags_str, content = get_cat_tag_content(p.b)</code></div>
+<div><code>title_str, category_str, tags_str, content </code><code>=</code> <code>get_cat_tag_content(<wbr/>md_content)</code></div>
+<div><code>category </code><code>=</code> <code>category_str.split(</code><code><wbr/>":"</code><code>)[</code><code>1</code><code>]</code></div>
+<div><code>tags </code><code>=</code> <code>tags_str.split(</code><code>":"</code><code>)[</code><code>1</code><code>].<wbr/>split(</code><code>","</code><code>)</code></div>
+<div><code>tags.append(category)</code></div>
+<div><code># title 是一個單獨的字串</code></div>
+<div><code>title </code><code>=</code> <code>title_str.split(</code><code>":"</code><code>)[</code><code>1</code><code><wbr/>]</code></div>
+<div><code># 將 markdown 格式 content 轉為 html</code></div>
+<div><code>content </code><code>=</code> <code>markdown(content)</code></div>
+<div><code># 以下處理 content 的 &lt;h2&gt; 標題</code></div>
+<div><code>content </code><code>=</code> <code>content.replace(</code><code>"&lt;<wbr/>h2&gt;"</code><code>, </code><code>"&lt;h2&gt;&lt;font size='4'&gt;"</code><code>)</code></div>
+<div><code>content </code><code>=</code> <code>content.replace(</code><code>"&lt;/<wbr/>h2&gt;"</code><code>, </code><code>"&lt;/font&gt;&lt;/h2&gt;"</code><code>)</code></div>
+<div><code>#<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093253000&amp;usg=AFQjCNFDunkfPcAATeNpgpYE0ZkBEOg0OQ" href="http://g.es/" target="_blank">g.es</a>(content)</code></div>
+<div> </div>
+<div><code>try</code><code>:</code></div>
+<div><code>    </code><code>'''</code></div>
+<div><code>    </code><code>users = service.users()</code></div>
+<div><code>    </code><code># 取得使用者 profile 資料</code></div>
+<div><code>    </code><code>user = users.get(userId='self').<wbr/>execute()</code></div>
+<div><code>    </code><code>print('網誌名稱: %s' % user['displayName'])</code></div>
+<div><code>    </code><code>'''</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>service.blogs()</code></div>
+<div><code>    </code><code># 取得使用者所建立網誌名稱</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>blogs.listByUser(<wbr/>userId</code><code>=</code><code>'self'</code><code>).execute()</code></div>
+<div><code>    </code><code># post_id is now blogs["items"][0]["id"]</code></div>
+<div><code>    </code><code>blog_id </code><code>=</code> <code>blogs[</code><code>"items"</code><code>][</code><code>0</code><code><wbr/>][</code><code>"id"</code><code>]</code></div>
+<div><code>    </code><code>#for blog in blogs['items']:</code></div>
+<div><code>        </code><code>#print(blog['name'], blog['url'])</code></div>
+<div><code>    </code><code>posts </code><code>=</code> <code>service.posts()</code></div>
+<div><code>    </code><code># 新增網誌 post 時, 需要 post_id</code></div>
+<div><code>    </code><code>body </code><code>=</code> <code>{</code></div>
+<div><code>    </code><code>"kind"</code><code>: </code><code>"blogger#post"</code><code>,</code></div>
+<div><code>    </code><code>"id"</code><code>: blog_id,</code></div>
+<div><code>    </code><code>"title"</code><code>: title,</code></div>
+<div><code>    </code><code># 利用 markdown 函式, 將 .md 的內文轉為 html, 作為 Blogger 的文章內容</code></div>
+<div><code>    </code><code>"content"</code><code>: content,</code></div>
+<div><code>    </code><code>"labels"</code><code>: tags</code></div>
+<div><code>    </code><code>}</code></div>
+<div><code>    </code><code>insert </code><code>=</code> <code>posts.insert(<wbr/>blogId</code><code>=</code><code>blog_id, body</code><code>=</code><code>body)</code></div>
+<div><code>    </code><code>posts_doc </code><code>=</code> <code>insert.<wbr/>execute()</code></div>
+<div><code>    </code><code>post_id </code><code>=</code> <code>posts_doc[</code><code>"id"</code><code>]</code></div>
+<div><code>    </code><code>#print(posts_doc)</code></div>
+<div><code>    </code><code>os.remove(</code><code>"blogger.dat"</code><code>)</code></div>
+<div><code>    </code><code># 利用最後的 child 節點來儲存 post_id</code></div>
+<div><code>    </code><code>to_save_post_id </code><code>=</code> <code>p.<wbr/>insertAsLastChild()  </code></div>
+<div><code>    </code><code># 改為內文為空的節點, id 直接標在 head 標題</code></div>
+<div><code>    </code><code>to_save_post_id.b </code><code>=</code> <code>""</code></div>
+<div><code>    </code><code>to_save_post_id.h </code><code>=</code> <code>post_<wbr/>id</code></div>
+<div><code>    </code><code># 因為新增節點, commander 必須 redraw</code></div>
+<div><code>    </code><code>c.redraw()</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093254000&amp;usg=AFQjCNHzn_JkZ1eyaHRiaKjs6dhiWWOcXw" href="http://g.es/" target="_blank">g.es</a>(</code><code>"post_id 為"</code><code>, post_id)</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093254000&amp;usg=AFQjCNHzn_JkZ1eyaHRiaKjs6dhiWWOcXw" href="http://g.es/" target="_blank">g.es</a>(</code><code>"已經將資料送往 Blogger!"</code><code>)</code></div>
+<div><code>except</code><code>(client.<wbr/>AccessTokenRefreshError):</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093254000&amp;usg=AFQjCNHzn_JkZ1eyaHRiaKjs6dhiWWOcXw" href="http://g.es/" target="_blank">g.es</a>(</code><code>"error"</code><code>)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>edit_to_blogger 按鈕內容:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_415508">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+<div>27</div>
+<div>28</div>
+<div>29</div>
+<div>30</div>
+<div>31</div>
+<div>32</div>
+<div>33</div>
+<div>34</div>
+<div>35</div>
+<div>36</div>
+<div>37</div>
+<div>38</div>
+<div>39</div>
+<div>40</div>
+<div>41</div>
+<div>42</div>
+<div>43</div>
+<div>44</div>
+<div>45</div>
+<div>46</div>
+<div>47</div>
+<div>48</div>
+<div>49</div>
+<div>50</div>
+<div>51</div>
+<div>52</div>
+<div>53</div>
+<div>54</div>
+<div>55</div>
+<div>56</div>
+<div>57</div>
+<div>58</div>
+<div>59</div>
+<div>60</div>
+<div>61</div>
+<div>62</div>
+<div>63</div>
+<div>64</div>
+<div>65</div>
+<div>66</div>
+<div>67</div>
+<div>68</div>
+<div>69</div>
+<div>70</div>
+<div>71</div>
+<div>72</div>
+<div>73</div>
+<div>74</div>
+<div>75</div>
+<div>76</div>
+<div>77</div>
+<div>78</div>
+<div>79</div>
+<div>80</div>
+</td>
+<td>
+<div>
+<div><code>from</code> <code>markdown </code><code>import</code> <code>markdown</code></div>
+<div><code>from</code> <code>oauth2client </code><code>import</code> <code>clien<wbr/>t</code></div>
+<div><code>from</code> <code>googleapiclient </code><code>import</code> <code>sa<wbr/>mple_tools</code></div>
+<div><code>import</code> <code>os</code></div>
+<div> </div>
+<div><code>os.environ[</code><code>'TZ'</code><code>] </code><code>=</code> <code>'Asia/<wbr/>Taipei'</code></div>
+<div><code>argv </code><code>=</code> <code>""</code></div>
+<div><code># 認證並建立服務</code></div>
+<div><code># name of the api is "blogger", version is "v3"</code></div>
+<div><code># description of the api is __doc__</code></div>
+<div><code># file name of the application: location of client_secrets.json</code></div>
+<div><code>service, flags </code><code>=</code> <code>sample_tools.init(</code></div>
+<div><code>  </code><code>argv, </code><code>'blogger'</code><code>, </code><code>'v3'</code><code>, __doc__, </code><code>"./../../client_<wbr/>secrets.json"</code><code>,</code></div>
+<div><code>  </code><code>scope</code><code>=</code><code>'<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.googleapis.com/auth/blogger&amp;source=gmail&amp;ust=1592029093255000&amp;usg=AFQjCNGlRhQ2FtnDJirbMmqvtNUeh5uekg" href="https://www.googleapis.com/auth/blogger" target="_blank">https://www.<wbr/>googleapis.com/auth/blogger</a>'</code><code>)</code></div>
+<div> </div>
+<div> </div>
+<div><code>def</code> <code>get_cat_tag_content(data):</code></div>
+<div><code>    </code><code># 請注意, 因為 data 來自 .md 的檔案 內容, 第1行為 ---</code></div>
+<div><code>    </code><code># 用跳行符號分割</code></div>
+<div><code>    </code><code>data_list </code><code>=</code> <code>data.split(</code><code>"\<wbr/>n"</code><code>)</code></div>
+<div><code>    </code><code>#第 2 行為 title</code></div>
+<div><code>    </code><code>title</code><code>=</code> <code>data_list[</code><code>1</code><code>]</code></div>
+<div><code>    </code><code>#第 4 行為 category</code></div>
+<div><code>    </code><code>category </code><code>=</code> <code>data_list[</code><code>3</code><code>]</code></div>
+<div><code>    </code><code>#第 5 行為 tags</code></div>
+<div><code>    </code><code>tags </code><code>=</code> <code>data_list[</code><code>4</code><code>]</code></div>
+<div><code>    </code><code># 有多項資料的 content 型別為數列</code></div>
+<div><code>    </code><code># 再將第 9 行之後的資料數列串回成以跳行隔開的資料</code></div>
+<div><code>    </code><code>content </code><code>=</code> <code>"\n"</code><code>.join(data_<wbr/>list[</code><code>8</code><code>:])</code></div>
+<div><code>    </code><code># 先將截斷摘要與內文的 pelican md 檔按符號, 換成 Blogger 的 &lt;!--more--&gt;</code></div>
+<div><code>    </code><code>content </code><code>=</code> <code>content.replace(</code><code><wbr/>'&lt;!-- PELICAN_END_SUMMARY --&gt;'</code><code>, </code><code>'&lt;!--more--&gt;'</code><code>)</code></div>
+<div><code>    </code><code># 接著若內容有 ~~~python 與 ~~~ 則換成 Wordpress 格式</code></div>
+<div><code>    </code><code>#content = content.replace('~~~python', '[code lang="python"]')</code></div>
+<div><code>    </code><code>#content = content.replace('~~~', '[/code]')</code></div>
+<div><code>    </code><code>return</code> <code>title, category, tags, content</code></div>
+<div> </div>
+<div><code># 從目前所在節點的 body pan 中取出類別, tags 以及文章內容</code></div>
+<div><code># p.h 為 @clean filename.md</code></div>
+<div><code># 因為要使用 @clean 節點掛上為後的 blogger post_id, 因此改為讀 .md 檔案</code></div>
+<div><code>md_filename </code><code>=</code> <code>p.h.split(</code><code>" "</code><code>)[</code><code>1</code><code>]</code></div>
+<div><code>with </code><code>open</code><code>(md_filename, </code><code>'r'</code><code>, encoding</code><code>=</code><code>"utf-8"</code><code>) as content_file:</code></div>
+<div><code>    </code><code>md_content </code><code>=</code> <code>content_file.<wbr/>read()</code></div>
+<div><code># title_str, category_str, tags_str, content = get_cat_tag_content(p.b)</code></div>
+<div><code>title_str, category_str, tags_str, content </code><code>=</code> <code>get_cat_tag_content(<wbr/>md_content)</code></div>
+<div><code>category </code><code>=</code> <code>category_str.split(</code><code><wbr/>":"</code><code>)[</code><code>1</code><code>]</code></div>
+<div><code>tags </code><code>=</code> <code>tags_str.split(</code><code>":"</code><code>)[</code><code>1</code><code>].<wbr/>split(</code><code>","</code><code>)</code></div>
+<div><code>tags.append(category)</code></div>
+<div><code># title 是一個單獨的字串</code></div>
+<div><code>title </code><code>=</code> <code>title_str.split(</code><code>":"</code><code>)[</code><code>1</code><code><wbr/>]</code></div>
+<div><code># 將 markdown 格式 content 轉為 html</code></div>
+<div><code>content </code><code>=</code> <code>markdown(content)</code></div>
+<div><code># 以下處理 content 的 &lt;h2&gt; 標題</code></div>
+<div><code>content </code><code>=</code> <code>content.replace(</code><code>"&lt;<wbr/>h2&gt;"</code><code>, </code><code>"&lt;h2&gt;&lt;font size='4'&gt;"</code><code>)</code></div>
+<div><code>content </code><code>=</code> <code>content.replace(</code><code>"&lt;/<wbr/>h2&gt;"</code><code>, </code><code>"&lt;/font&gt;&lt;/h2&gt;"</code><code>)</code></div>
+<div><code>#<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093255000&amp;usg=AFQjCNG2-eHdDwkrN5Q0_3fYEXr75LX0Wg" href="http://g.es/" target="_blank">g.es</a>(content)</code></div>
+<div> </div>
+<div><code>try</code><code>:</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>service.blogs()</code></div>
+<div><code>    </code><code># 取得使用者所建立網誌名稱</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>blogs.listByUser(<wbr/>userId</code><code>=</code><code>'self'</code><code>).execute()</code></div>
+<div><code>    </code><code>blog_id </code><code>=</code> <code>blogs[</code><code>"items"</code><code>][</code><code>0</code><code><wbr/>][</code><code>"id"</code><code>]</code></div>
+<div><code>    </code><code># 設法取得原 post 的 id</code></div>
+<div><code>    </code><code>postid_outline </code><code>=</code> <code>p.<wbr/>getLastChild()</code></div>
+<div><code>    </code><code># 直接從標題取得 post 的 id 號碼</code></div>
+<div><code>    </code><code>post_id </code><code>=</code> <code>postid_outline.h</code></div>
+<div><code>    </code><code>posts </code><code>=</code> <code>service.posts()</code></div>
+<div><code>    </code><code># 更新網誌文章時的 body</code></div>
+<div><code>    </code><code>body </code><code>=</code> <code>{</code></div>
+<div><code>    </code><code>"kind"</code><code>: </code><code>"blogger#post"</code><code>,</code></div>
+<div><code>    </code><code>"title"</code><code>: title,</code></div>
+<div><code>    </code><code>"content"</code><code>: content</code></div>
+<div><code>    </code><code>}</code></div>
+<div><code>    </code><code># need to save postId to outline head</code></div>
+<div><code>    </code><code>update </code><code>=</code> <code>posts.update(<wbr/>blogId</code><code>=</code><code>blog_id, postId</code><code>=</code><code>post_id, body</code><code>=</code><code>body, publish</code><code>=</code><code>True</code><code>)</code></div>
+<div><code>    </code><code>update_doc </code><code>=</code> <code>update.<wbr/>execute()</code></div>
+<div><code>    </code><code>os.remove(</code><code>"blogger.dat"</code><code>)</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNHrgB7M9jfDZz2UL0uGzpYlYuDxGg" href="http://g.es/" target="_blank">g.es</a>(</code><code>"post_id 為"</code><code>, post_id)</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNHrgB7M9jfDZz2UL0uGzpYlYuDxGg" href="http://g.es/" target="_blank">g.es</a>(</code><code>"已經將更新資料送往 Blogger!"</code><code>)</code></div>
+<div><code>except</code><code>(client.<wbr/>AccessTokenRefreshError):</code></div>
+<div><code>    </code><code><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://g.es&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNHrgB7M9jfDZz2UL0uGzpYlYuDxGg" href="http://g.es/" target="_blank">g.es</a>(</code><code>"error"</code><code>)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2>W14</h2>
+<p>從 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://2019wcm.blogspot.com/2019/03/posted-via-python.html&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNGFW7_UhwduuVRuSt70PO7LrdWScg" href="https://2019wcm.blogspot.com/2019/03/posted-via-python.html" target="_blank">https://2019wcm.blogspot.<wbr/>com/2019/03/posted-via-python.<wbr/>html</a> 取得Google Blogger Python API 程式, 修改後執行, 測試是否可以讀取設定的 client_secrets.json, 在各自的 Blogger ID 與 Post ID 中新增或修改網誌文章.</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D13KBfWIMULL9fAPw-T54cExMt9GUTW4XZ&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNE7KQIBGFGyUGJoQF8DWygUBRjRdQ" href="https://drive.google.com/open?id=13KBfWIMULL9fAPw-T54cExMt9GUTW4XZ" target="_blank">以 Blogger Python API 程式修改文章的教學影片</a> (for @gm users only)</p>
+<hr/>
+<p>直接在操作系統建立網際內容管理合用系統</p>
+<p>Windows 10 64 位元操作系統</p>
+<p>安裝 Python 3.8.3 與 pip</p>
+<p>至 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.python.org/downloads/windows/&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNHiI5M5WZOpGsgRtR5ko8bHQDDMWQ" href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/<wbr/>downloads/windows/</a> 下載 Python 3.8.3 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.python.org/ftp/python/3.8.3/python-3.8.3-amd64.exe&amp;source=gmail&amp;ust=1592029093256000&amp;usg=AFQjCNHTL1ciDr8AWyl3xGjKxGdKXkU3CQ" href="https://www.python.org/ftp/python/3.8.3/python-3.8.3-amd64.exe" target="_blank">Windows x86-64 executable installer</a></p>
+<p>可以直接選擇安裝 pip 與所有選項內容</p>
+<p>安裝 Git</p>
+<p>利用 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://github.com/git-for-windows/git/releases/download/v2.26.2.windows.1/Git-2.26.2-64-bit.exe&amp;source=gmail&amp;ust=1592029093257000&amp;usg=AFQjCNFl1tp6qJqrNMvnO8yHrd1XSrmwAQ" href="https://github.com/git-for-windows/git/releases/download/v2.26.2.windows.1/Git-2.26.2-64-bit.exe" target="_blank">64-bit Git for Windows Setup</a> 安裝 Git 工具.</p>
+<p>安裝 CMSiMDE 所需模組</p>
+<p>利用 cmd 開啟命令列視窗, 以 pip 安裝 flask flask_cors lxml bs4 markdown pelican leo 等模組</p>
+<p>pip install  flask flask_cors lxml bs4 markdown pelican leo</p>
+<p>Ubuntu 20.04 操作系統 (請下載<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D13Gqwyj0CGR6wa9dZg_BmlCLv5cNYWQJ_&amp;source=gmail&amp;ust=1592029093257000&amp;usg=AFQjCNHXlhVYww6VgQCveqcmXLa89CH_qw" href="https://drive.google.com/open?id=13Gqwyj0CGR6wa9dZg_BmlCLv5cNYWQJ_" target="_blank"> W12 Virtualbox 虛擬主機檔案</a>)</p>
+<p>Ubuntu 20.04 同時存在 Python 2.7 與 Python 3.8.2,  CMSiMDE 只相容於 Python 3.8.2, 因此啟動指令必須使用:</p>
+<p>python3 wsgi.py</p>
+<p>與 </p>
+<p>pip3 install  flask flask_cors lxml bs4 markdown pelican leo</p>
+<p>Mac OS X 操作系統</p>
+<p>與 Ubuntu 20.04 類似.</p>
+<h3>新增 blogger 文章</h3>
+<h4>w14_blogger_add_1.py</h4>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_152374">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+<div>27</div>
+<div>28</div>
+<div>29</div>
+<div>30</div>
+<div>31</div>
+<div>32</div>
+<div>33</div>
+<div>34</div>
+<div>35</div>
+<div>36</div>
+<div>37</div>
+<div>38</div>
+<div>39</div>
+<div>40</div>
+<div>41</div>
+<div>42</div>
+<div>43</div>
+<div>44</div>
+<div>45</div>
+<div>46</div>
+<div>47</div>
+<div>48</div>
+<div>49</div>
+<div>50</div>
+<div>51</div>
+<div>52</div>
+<div>53</div>
+<div>54</div>
+<div>55</div>
+</td>
+<td>
+<div>
+<div><code>'''</code></div>
+<div><code>用來測試 Google Blogger Python API 新增文章程式</code></div>
+<div> </div>
+<div><code>pip install google-api-python-client oauth2client</code></div>
+<div> </div>
+<div><code>'''</code></div>
+<div> </div>
+<div><code>import</code> <code>sys</code></div>
+<div><code>from</code> <code>oauth2client </code><code>import</code> <code>clien<wbr/>t</code></div>
+<div><code>from</code> <code>googleapiclient </code><code>import</code> <code>sa<wbr/>mple_tools</code></div>
+<div> </div>
+<div><code>argv </code><code>=</code> <code>""</code></div>
+<div><code># 認證並建立服務</code></div>
+<div><code>service, flags </code><code>=</code> <code>sample_tools.init(</code></div>
+<div><code>  </code><code>argv, </code><code>'blogger'</code><code>, </code><code>'v3'</code><code>, __doc__, </code><code>'./client_secrets.<wbr/>json'</code><code>,</code></div>
+<div><code>  </code><code>scope</code><code>=</code><code>'<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.googleapis.com/auth/blogger&amp;source=gmail&amp;ust=1592029093257000&amp;usg=AFQjCNGd-bHztzdueZA8Ui2VtxaMFPsGhw" href="https://www.googleapis.com/auth/blogger" target="_blank">https://www.<wbr/>googleapis.com/auth/blogger</a>'</code><code>)</code></div>
+<div> </div>
+<div><code>try</code><code>:</code></div>
+<div><code>    </code><code>users </code><code>=</code> <code>service.users()</code></div>
+<div><code>    </code><code># 取得使用者 profile 資料</code></div>
+<div><code>    </code><code>user </code><code>=</code> <code>users.get(userId</code><code>=</code><code>'<wbr/>self'</code><code>).execute()</code></div>
+<div><code>    </code><code>print</code><code>(</code><code>'網誌名稱: %s'</code> <code>%</code> <code>user[</code><code>'displayName'</code><code>])</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>service.blogs()</code></div>
+<div><code>    </code><code># 取得使用者所建立網誌名稱</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>blogs.listByUser(<wbr/>userId</code><code>=</code><code>'self'</code><code>).execute()</code></div>
+<div><code>    </code><code>for</code> <code>blog </code><code>in</code> <code>blogs[</code><code>'items'</code><code>]<wbr/>:</code></div>
+<div><code>        </code><code>print</code><code>(blog[</code><code>'name'</code><code>], blog[</code><code>'url'</code><code>])</code></div>
+<div><code>    </code><code>posts </code><code>=</code> <code>service.posts()</code></div>
+<div><code>    </code><code># 新增網誌 post 時, 需要 blog id</code></div>
+<div> </div>
+<div><code>    </code><code>body </code><code>=</code> <code>{</code></div>
+<div><code>    </code><code>"kind"</code><code>: </code><code>"blogger#post"</code><code>,</code></div>
+<div><code>    </code><code>"id"</code><code>: </code><code>"123"</code><code>,</code></div>
+<div><code>    </code><code>"title"</code><code>: </code><code>"透過 Python 程式新增網誌文章1"</code><code>,</code></div>
+<div><code>    </code><code>"content"</code><code>:</code><code>"使用 Google Blogger API 可以利用程式新增網誌文章內容1"</code></div>
+<div><code>    </code><code>}</code></div>
+<div><code>    </code> </div>
+<div><code>    </code><code>insert </code><code>=</code> <code>posts.insert(<wbr/>blogId</code><code>=</code><code>'123'</code><code>, body</code><code>=</code><code>body)</code></div>
+<div><code>    </code><code>posts_doc </code><code>=</code> <code>insert.<wbr/>execute()</code></div>
+<div><code>    </code><code>print</code><code>(posts_doc)</code></div>
+<div><code>    </code> </div>
+<div><code>    </code><code>'''</code></div>
+<div><code>    </code><code># 更新網誌文章時的 body</code></div>
+<div><code>    </code><code>body = {</code></div>
+<div><code>    </code><code>"kind": "blogger#post",</code></div>
+<div><code>    </code><code>"title": "透過 Python 程式修改網誌文章2",</code></div>
+<div><code>    </code><code>"content": "使用 Google Blogger API 可以利用程式修改網誌文章內容.<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://mde.tw/cd2019&amp;source=gmail&amp;ust=1592029093257000&amp;usg=AFQjCNGat5X-etJZkIN6Is4uRpclnolG_w" href="http://mde.tw/cd2019" target="_blank">http://mde.tw/cd2019</a>"</code></div>
+<div><code>    </code><code>}</code></div>
+<div><code>    </code> </div>
+<div><code>    </code><code>update = posts.update(blogId="123", postId="456", body=body, publish=True)</code></div>
+<div><code>    </code><code>update_doc = update.execute()</code></div>
+<div><code>    </code><code>print(update_doc)</code></div>
+<div><code>    </code><code>'''</code></div>
+<div><code>except</code><code>(client.<wbr/>AccessTokenRefreshError):</code></div>
+<div><code>    </code><code>print</code><code>(</code><code>"error"</code><code>)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3>編輯 Blogger 文章</h3>
+<h4>w14_blogger_edit_1.py</h4>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_610257">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+<div>27</div>
+<div>28</div>
+<div>29</div>
+<div>30</div>
+<div>31</div>
+<div>32</div>
+<div>33</div>
+<div>34</div>
+<div>35</div>
+<div>36</div>
+<div>37</div>
+<div>38</div>
+<div>39</div>
+<div>40</div>
+<div>41</div>
+<div>42</div>
+<div>43</div>
+<div>44</div>
+<div>45</div>
+<div>46</div>
+<div>47</div>
+<div>48</div>
+<div>49</div>
+<div>50</div>
+<div>51</div>
+<div>52</div>
+<div>53</div>
+<div>54</div>
+<div>55</div>
+<div>56</div>
+</td>
+<td>
+<div>
+<div><code>'''</code></div>
+<div><code>用來測試 Google Blogger Python API 編輯文章程式</code></div>
+<div> </div>
+<div><code>pip install google-api-python-client oauth2client</code></div>
+<div> </div>
+<div><code>'''</code></div>
+<div> </div>
+<div><code>import</code> <code>sys</code></div>
+<div><code>from</code> <code>oauth2client </code><code>import</code> <code>clien<wbr/>t</code></div>
+<div><code>from</code> <code>googleapiclient </code><code>import</code> <code>sa<wbr/>mple_tools</code></div>
+<div> </div>
+<div><code>argv </code><code>=</code> <code>""</code></div>
+<div><code># 認證並建立服務</code></div>
+<div><code>service, flags </code><code>=</code> <code>sample_tools.init(</code></div>
+<div><code>  </code><code>argv, </code><code>'blogger'</code><code>, </code><code>'v3'</code><code>, __doc__, </code><code>'./client_secrets.<wbr/>json'</code><code>,</code></div>
+<div><code>  </code><code>scope</code><code>=</code><code>'<a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.googleapis.com/auth/blogger&amp;source=gmail&amp;ust=1592029093258000&amp;usg=AFQjCNE5lkX5tPEgKYBEeTAo0DRi3C4SSQ" href="https://www.googleapis.com/auth/blogger" target="_blank">https://www.<wbr/>googleapis.com/auth/blogger</a>'</code><code>)</code></div>
+<div> </div>
+<div><code>try</code><code>:</code></div>
+<div><code>    </code><code>users </code><code>=</code> <code>service.users()</code></div>
+<div><code>    </code><code># 取得使用者 profile 資料</code></div>
+<div><code>    </code><code>user </code><code>=</code> <code>users.get(userId</code><code>=</code><code>'<wbr/>self'</code><code>).execute()</code></div>
+<div><code>    </code><code>print</code><code>(</code><code>'網誌名稱: %s'</code> <code>%</code> <code>user[</code><code>'displayName'</code><code>])</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>service.blogs()</code></div>
+<div><code>    </code><code># 取得使用者所建立網誌名稱</code></div>
+<div><code>    </code><code>blogs </code><code>=</code> <code>blogs.listByUser(<wbr/>userId</code><code>=</code><code>'self'</code><code>).execute()</code></div>
+<div><code>    </code><code>for</code> <code>blog </code><code>in</code> <code>blogs[</code><code>'items'</code><code>]<wbr/>:</code></div>
+<div><code>        </code><code>print</code><code>(blog[</code><code>'name'</code><code>], blog[</code><code>'url'</code><code>])</code></div>
+<div><code>    </code><code>posts </code><code>=</code> <code>service.posts()</code></div>
+<div><code>    </code><code># 新增網誌 post 時, 需要 blog id</code></div>
+<div> </div>
+<div><code>    </code><code>'''</code></div>
+<div><code>    </code><code>body = {</code></div>
+<div><code>    </code><code>"kind": "blogger#post",</code></div>
+<div><code>    </code><code>"id": "123",</code></div>
+<div><code>    </code><code>"title": "透過 Python 程式新增網誌文章1",</code></div>
+<div><code>    </code><code>"content":"使用 Google Blogger API 可以利用程式新增網誌文章內容1"</code></div>
+<div><code>    </code><code>}</code></div>
+<div><code>    </code> </div>
+<div><code>    </code><code>insert = posts.insert(blogId='123', body=body)</code></div>
+<div><code>    </code><code>posts_doc = insert.execute()</code></div>
+<div><code>    </code><code>print(posts_doc)</code></div>
+<div><code>    </code><code>'''</code></div>
+<div> </div>
+<div><code>    </code><code># 更新網誌文章時的 body</code></div>
+<div><code>    </code><code>body </code><code>=</code> <code>{</code></div>
+<div><code>    </code><code>"kind"</code><code>: </code><code>"blogger#post"</code><code>,</code></div>
+<div><code>    </code><code>"title"</code><code>: </code><code>"透過 Python 程式修改網誌文章2"</code><code>,</code></div>
+<div><code>    </code><code>"content"</code><code>: </code><code>"使用 Google Blogger API 可以利用程式修改網誌文章內容.<span> </span><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=http://mde.tw/cd2019&amp;source=gmail&amp;ust=1592029093258000&amp;usg=AFQjCNHjvNQD2x5QH84bV_E30bHBYfhyyQ" href="http://mde.tw/cd2019" target="_blank">http://mde.tw/cd2019</a>"</code></div>
+<div><code>    </code><code>}</code></div>
+<div><code>    </code> </div>
+<div><code>    </code><code>update </code><code>=</code> <code>posts.update(<wbr/>blogId</code><code>=</code><code>"123"</code><code>, postId</code><code>=</code><code>"456"</code><code>, body</code><code>=</code><code>body, publish</code><code>=</code><code>True</code><code>)</code></div>
+<div><code>    </code><code>update_doc </code><code>=</code> <code>update.<wbr/>execute()</code></div>
+<div><code>    </code><code>print</code><code>(update_doc)</code></div>
+<div> </div>
+<div><code>except</code><code>(client.<wbr/>AccessTokenRefreshError):</code></div>
+<div><code>    </code><code>print</code><code>(</code><code>"error"</code><code>)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3>MacBook 操作指南</h3>
+<h4>參考資料:</h4>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1zIJkMnFNb0QYsBbzlxAvw8t7hZdZc0hh&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNFVchs1dsNTSU_7pC-9K4Ejpx-iHw" href="https://drive.google.com/open?id=1zIJkMnFNb0QYsBbzlxAvw8t7hZdZc0hh" target="_blank">Mac OS X for Absolute Beginners.pdf</a> (for @gm users only)</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1hl53RvI1sPFDuF63_TvjuuS-9y9ZQiO3&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNH5FNfaJwqKqNf2YKOkq0uTFuaOIw" href="https://drive.google.com/open?id=1hl53RvI1sPFDuF63_TvjuuS-9y9ZQiO3" target="_blank">Learn C on the Mac.pdf</a> (for @gm users only)</p>
+<p>這裡以 MacBook Air 2012 年出廠, 硬體規格:</p>
+<p>macOS Catalina Version 10.15.4</p>
+<p>1.8 GHz Dual-Core Intel Core i5</p>
+<p>Memory $GB 1600 MHz DDR3</p>
+<p>Graphics Intel HD Graphics 4000 1536 MB</p>
+<p>的操作為例, 如何存活在機械設計工程系與精密機械工程科的網際內容管理課程.</p>
+<p>由於網際內容管理課程主要以 Ｗindows 10 64 位元操作系統中的 Python 3 可攜程式環境使用為主.</p>
+<h4>從官方網站下載安裝 Python3</h4>
+<p>因此 Catalina 系統中的首要任務, 便是安裝 Python 3:</p>
+<p>在 2020.05.15 從 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.python.org/downloads/mac-osx/&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNHxhykTJtwEiJ4EmcUbtwqd1BY_DA" href="https://www.python.org/downloads/mac-osx/" target="_blank">https://www.python.org/<wbr/>downloads/mac-osx/</a> 可以下載安裝最新的 Python 3.8.3 解譯環境.</p>
+<h4>安裝 pip3</h4>
+<p>有了 python 3 環境之後, 就可以從 Lanuchpad -&gt; Other -&gt; Terminal 開啟終端機, 並從 get-pip.py 下載用來安裝 pip3 的程式碼, 以終端機上的指令進行安裝:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_254158">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+</td>
+<td>
+<div>
+<div><code>sudo python3 get-pip.py</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>安裝 pip3 之後, 可以安裝 CMSiMDE 所需的 flask, flask_cors, lxml, bs4, markdown, pelican 以及 leo:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_222732">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+</td>
+<td>
+<div>
+<div><code>sudo pip3 install flask flask_cors lxml bs4 markdown pelican leo</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4>安裝 XQuartz</h4>
+<p>之後, 就可以安裝 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.xquartz.org/&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNGksbraZqVFXhrcxNLqPSrsOQEuSg" href="https://www.xquartz.org/" target="_blank">XQuartz</a>, 以便使用 xterm 替代 terminal.</p>
+<p>接下來假如要使用 SciTE 作為文字編輯器, 建議透過 <a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://www.macports.org/install.php&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNGpueD4N2mUrnZ7Tr0W4fMjmHT7-w" href="https://www.macports.org/install.php" target="_blank">https://www.macports.org/<wbr/>install.php</a>  先根據 Catalina 操作系統版本安裝 Macports 之後, 再利用:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_930858">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+</td>
+<td>
+<div>
+<div><code>sudo port install scite</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>安裝 SciTE 文字編輯器.</p>
+<p>至此, 再加上 Catalina 原有的 git 指令, 使用者已經可以在 MacBook 上執行與 Windows 10 64 位元操作系統上相同的:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_148537">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+</td>
+<td>
+<div>
+<div><code>git clone --recurse-submodules</code></div>
+<div> </div>
+<div><code>git add .</code></div>
+<div> </div>
+<div><code>git commit -m </code><code>"commit message"</code></div>
+<div> </div>
+<div><code>git push</code></div>
+<div> </div>
+<div><code>git pull</code></div>
+<div> </div>
+<div><code>git submodule add</code></div>
+<div> </div>
+<div><code>git remote add</code></div>
+<div> </div>
+<div><code>git branch</code></div>
+<div> </div>
+<div><code>git merge</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>等指令, 只是在執行 python 程式時, 必須使用:</p>
+<div>
+<div id="m_8084781933794925333gmail-highlighter_951098">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</td>
+<td>
+<div>
+<div><code>python3 wsgi.py</code></div>
+<div> </div>
+<div><code>pip3 install certain_module</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>否則直接使用 python 執行, 將會用 Python 2.7 環境執行而產生錯誤.</p>
+<h4>其他建議安裝套件</h4>
+<p>Microsoft Remote Desktop</p>
+<p>Firefox</p>
+<p>OBS</p>
+<p>Visual Studio Code</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=zh-TW&amp;q=https://drive.google.com/open?id%3D1VeO6HfA3eq8kn5q9m2iJ8SdGCVwUhizo&amp;source=gmail&amp;ust=1592029093259000&amp;usg=AFQjCNHBUEPFBrz_vkO9bvDC1NA62poOgw" href="https://drive.google.com/open?id=1VeO6HfA3eq8kn5q9m2iJ8SdGCVwUhizo" target="_blank">Visual Studio Code Distilled.pdf</a> (for @gm users only)</p>
+<p>Flutter (Dart)</p>
+<h4>其他提示</h4>
+<p>Command + Shift + . (toggle hidden folders and files)</p>
+<p></p>
+<h2>W15-W18</h2>
+<p>各分組除了必須將 W1-W14 週的所有上課內容, 以圖文及影音資料加以整理在個人及分組倉儲、網站及簡報外.</p>
+<p>可以自選另一主題, 將分組協同的過程與內容整理在個人與分組的倉儲資料中.</p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
