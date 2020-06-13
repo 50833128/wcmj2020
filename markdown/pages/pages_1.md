@@ -10,6 +10,7 @@ Title: About
 
 課程網誌: <a href="https://chiamingyen.github.io/cmsimfly/blog">https://chiamingyen.github.io/cmsimfly/blog</a>
 
+50833128的fb: <a href="https://www.facebook.com/profile.php?id=100007304744085">https://www.facebook.com/profile.php?id=100007304744085</a>
 
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>我對不起你 嚴嘉銘老師 - Misc</title><link href="https://50833128.github.io/wcmj2020/blog/" rel="alternate"></link><link href="https://50833128.github.io/wcmj2020/blog/feeds/misc.atom.xml" rel="self"></link><id>https://50833128.github.io/wcmj2020/blog/</id><updated>2020-05-22T21:09:00+08:00</updated><entry><title>渣男的常用招數</title><link href="https://50833128.github.io/wcmj2020/blog/Trash%20man.html" rel="alternate"></link><published>2020-05-22T21:09:00+08:00</published><updated>2020-05-22T21:09:00+08:00</updated><author><name>yen</name></author><id>tag:50833128.github.io,2020-05-22:/wcmj2020/blog/Trash man.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>我對不起你 嚴嘉銘老師 - Misc</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2020-05-22T21:09:00+08:00</updated><entry><title>渣男的常用招數</title><link href=".%5CTrash%20man.html" rel="alternate"></link><published>2020-05-22T21:09:00+08:00</published><updated>2020-05-22T21:09:00+08:00</updated><author><name>yen</name></author><id>tag:None,2020-05-22:.\Trash man.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;他們騙妹妹的招數也就那幾招而已&lt;/h2&gt;
 &lt;p&gt;1.我只有跟你聊而已:裝的自己多與世無爭一樣
@@ -11,7 +11,7 @@
 7.我單身很久了:幾歲了謊話還這麼不成熟
 8.我覺得妳很特別:每個人都嘛很特別
 9.我跟別的男生不一樣:心裡壞掉的那種
-10.我只約妳而已:恁爸時間管理大師餒&lt;/p&gt;</content><category term="Misc"></category><category term="2018  Summer FK"></category></entry><entry><title>之前的分組結果</title><link href="https://50833128.github.io/wcmj2020/blog/Group%20finail.html" rel="alternate"></link><published>2020-05-22T15:00:00+08:00</published><updated>2020-05-22T15:00:00+08:00</updated><author><name>yen</name></author><id>tag:50833128.github.io,2020-05-22:/wcmj2020/blog/Group finail.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+10.我只約妳而已:恁爸時間管理大師餒&lt;/p&gt;</content><category term="Misc"></category><category term="2018  Summer FK"></category></entry><entry><title>之前的分組結果</title><link href=".%5CGroup%20finail.html" rel="alternate"></link><published>2020-05-22T15:00:00+08:00</published><updated>2020-05-22T15:00:00+08:00</updated><author><name>yen</name></author><id>tag:None,2020-05-22:.\Group finail.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;group 1 
 50833110
@@ -56,7 +56,7 @@
 50833135
 50833136
 50833137
-50833139&lt;/p&gt;</content><category term="Misc"></category><category term="2018  Summer LP"></category></entry><entry><title>2018 Fall CP 課程</title><link href="https://50833128.github.io/wcmj2020/blog/2018-Fall-32-bit-Windows.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:50833128.github.io,2018-09-10:/wcmj2020/blog/2018-Fall-32-bit-Windows.html</id><summary type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
+50833139&lt;/p&gt;</content><category term="Misc"></category><category term="2018  Summer LP"></category></entry><entry><title>2018 Fall CP 課程</title><link href=".%5C2018-Fall-32-bit-Windows.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:None,2018-09-10:.\2018-Fall-32-bit-Windows.html</id><summary type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
 
 
