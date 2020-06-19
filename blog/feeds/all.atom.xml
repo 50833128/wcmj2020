@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>我對不起你 嚴嘉銘老師</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/all.atom.xml" rel="self"></link><id>./</id><updated>2020-05-22T21:09:00+08:00</updated><entry><title>渣男的常用招數</title><link href=".%5CTrash%20man.html" rel="alternate"></link><published>2020-05-22T21:09:00+08:00</published><updated>2020-05-22T21:09:00+08:00</updated><author><name>yen</name></author><id>tag:None,2020-05-22:.\Trash man.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>我對不起你 嚴嘉銘老師</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/all.atom.xml" rel="self"></link><id>./</id><updated>2020-06-19T01:48:00+08:00</updated><entry><title>Github 貢獻值</title><link href=".%5CGithub.html" rel="alternate"></link><published>2020-06-19T01:48:00+08:00</published><updated>2020-06-19T01:48:00+08:00</updated><author><name>yen</name></author><id>tag:None,2020-06-19:.\Github.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h2&gt;貢獻的計算&lt;/h2&gt;
+&lt;p&gt;Github 官方協助文章&lt;/p&gt;
+&lt;p&gt;原文文章&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/"&gt;https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;貢獻的計算大概跟下列幾個項目有關&lt;/p&gt;
+&lt;p&gt;1.綁定在github上的電子郵件&lt;/p&gt;
+&lt;p&gt;2.倉儲的獨立性(好像是&lt;/p&gt;
+&lt;p&gt;3.倉儲的使用者(創建人&lt;/p&gt;
+&lt;p&gt;原因:
+1.綁定電子郵件:推送出去的資料是綁的什麼帳號
+(綁定誰的&lt;/p&gt;
+&lt;p&gt;2.倉儲的使用權限(公開或是私人，就是這個專案做過的人有誰，抑或是做了什麼過程(我們班設定的都是私人的&lt;/p&gt;
+&lt;p&gt;3.使用者基本上就是你自己&lt;/p&gt;
+&lt;p&gt;原文參考
+(翻譯不好請勿見怪
+&lt;a href="https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/"&gt;https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;補救方案:&lt;/p&gt;
+&lt;p&gt;下面這則文章大概是在說如何修改 提交紀錄中作者的 名稱及電子郵件 
+不過要更改的話請慎重 因為更改的是你整個github倉儲的歷史
+警告:
+這個步驟對github倉儲有一定程度的破壞性 尤其是共用倉儲或是公開倉儲 盡量在危急時刻才修改(不過我不知道甚麼破壞性啦哈哈&lt;/p&gt;
+&lt;p&gt;原文文章:&lt;a href="https://help.github.com/articles/changing-author-info/"&gt;https://help.github.com/articles/changing-author-info/&lt;/a&gt;&lt;/p&gt;</content><category term="Misc"></category><category term="2018 mother fucker"></category></entry><entry><title>渣男的常用招數</title><link href=".%5CTrash%20man.html" rel="alternate"></link><published>2020-05-22T21:09:00+08:00</published><updated>2020-05-22T21:09:00+08:00</updated><author><name>yen</name></author><id>tag:None,2020-05-22:.\Trash man.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;他們騙妹妹的招數也就那幾招而已&lt;/h2&gt;
 &lt;p&gt;1.我只有跟你聊而已:裝的自己多與世無爭一樣
