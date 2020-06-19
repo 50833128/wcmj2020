@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>我對不起你 嚴嘉銘老師 - Misc</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2020-06-19T02:52:00+08:00</updated><entry><title>Github fork</title><link href=".%5CGithub.html" rel="alternate"></link><published>2020-06-19T02:52:00+08:00</published><updated>2020-06-19T02:52:00+08:00</updated><author><name>yen</name></author><id>tag:None,2020-06-19:.\Github.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>我對不起你 嚴嘉銘老師 - Misc</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2020-06-19T02:52:00+08:00</updated><entry><title>Github fork</title><link href=".%5CGithub1.html" rel="alternate"></link><published>2020-06-19T02:52:00+08:00</published><updated>2020-06-19T02:52:00+08:00</updated><author><name>yen</name></author><id>tag:None,2020-06-19:.\Github1.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;簡介 fork(分支倉庫&lt;/h2&gt;
 &lt;p&gt;簡單來講 fork 有點像 google drive的共用功能:&lt;/p&gt;

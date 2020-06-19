@@ -62,7 +62,7 @@
 <v t="leo.20200522152905.1"><vh>@clean 20200522.md</vh></v>
 <v t="leo.20200522154405.1"><vh>@clean 20200522down.md</vh></v>
 <v t="leo.20200619134658.1"><vh>@clean 2020069.md</vh></v>
-<v t="leo.20200619145148.1"><vh>@clean 20200619..md</vh></v>
+<v t="leo.20200619145148.1"><vh>@clean 20200619.md</vh></v>
 </v>
 </v>
 </v>
@@ -461,7 +461,7 @@ Title:Github fork
 Date: 2020-06-19 02:52
 Category: Misc
 Tags: 2020 github fork
-Slug: Github
+Slug: Github1
 Author: yen
 ---
 &lt;!-- PELICAN_END_SUMMARY --&gt;
