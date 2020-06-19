@@ -62,6 +62,7 @@
 <v t="leo.20200522152905.1"><vh>@clean 20200522.md</vh></v>
 <v t="leo.20200522154405.1"><vh>@clean 20200522down.md</vh></v>
 <v t="leo.20200619134658.1"><vh>@clean 2020069.md</vh></v>
+<v t="leo.20200619145148.1"><vh>@clean 20200619..md</vh></v>
 </v>
 </v>
 </v>
@@ -454,6 +455,29 @@ Github 官方協助文章
 這個步驟對github倉儲有一定程度的破壞性 尤其是共用倉儲或是公開倉儲 盡量在危急時刻才修改(不過我不知道甚麼破壞性啦哈哈
 
 原文文章:&lt;a href="https://help.github.com/articles/changing-author-info/"&gt;https://help.github.com/articles/changing-author-info/&lt;/a&gt;</t>
+<t tx="leo.20200619145148.1">@language md
+---
+Title:Github fork
+Date: 2020-06-19 02:52
+Category: Misc
+Tags: 2020 github fork
+Slug: Github
+Author: yen
+---
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+簡介 fork(分支倉庫
+----
+簡單來講 fork 有點像 google drive的共用功能:
+
+公開倉儲和fork的差別:
+
+公開倉儲:你是參與者，並且可以修改專案內容，你也是開發者的一個。
+
+fork(分支倉儲:有點像mc裡面的模組 ，可以享用程式碼的功能，clone 別人的程式碼，也就是可以享用別人的成果，而自己的成果也能在上面被分享。等於是複製下來。
+
+&lt;a herh=" github.com/oldratlee/translations/git-workflows-and-tutorials/workflow-forking.md"&gt;1.《Forking工作流》 github.com/oldratlee/translations/git-workflows-and-tutorials/workflow-forking.md&lt;/a&gt;
+
+</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
