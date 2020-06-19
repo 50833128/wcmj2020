@@ -475,7 +475,7 @@ Author: yen
 
 fork(分支倉儲:有點像mc裡面的模組 ，可以享用程式碼的功能，clone 別人的程式碼，也就是可以享用別人的成果，而自己的成果也能在上面被分享。等於是複製下來。
 
-&lt;a herh=" github.com/oldratlee/translations/git-workflows-and-tutorials/workflow-forking.md"&gt; github.com/oldratlee/translations/git-workflows-and-tutorials/workflow-forking.md&lt;img src="https://pic4.zhimg.com/50/v2-ba2bd4a27309817623b56acae1939767_hd.jpg" data-caption="" data-size="normal" data-rawwidth="400" data-rawheight="344" class="content_image" width="400"/&gt;
+&lt;a herh="https://github.com/oldratlee/translations/blob/master/git-workflows-and-tutorials/workflow-forking.md"&gt; github.com/oldratlee/translations/git-workflows-and-tutorials/workflow-forking.md&lt;img src="https://pic4.zhimg.com/50/v2-ba2bd4a27309817623b56acae1939767_hd.jpg" data-caption="" data-size="normal" data-rawwidth="400" data-rawheight="344" class="content_image" width="400"/&gt;
 
 作者：李鼎
 链接：https://www.zhihu.com/question/20431718/answer/74250205
